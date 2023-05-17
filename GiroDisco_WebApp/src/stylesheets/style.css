@@ -12,8 +12,24 @@ Font Usage:
     margin: 0;
     padding: 0;
     text-decoration: none;
-    
+    list-style: none;
 }
+/*Typography*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+h1, p, a{
+    color: var(--primary);
+}
+p, a{
+    font-size: 16px;
+}
+i{
+    font-size: 25px;
+}
+/*----*/
+
 header{
     position: fixed;
     width: 100%;
@@ -24,11 +40,95 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 28px 12%;
-    transition: all .50s ease;
+    padding: 20px 0;
+    transition: all .5s ease;
 }
 .logo{
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 120px;
+    margin-left: 50px;
+}
+.navbar{
+    display: flex;
+    margin-right: 20%;
+}
+.navbar a{
+    margin: 0px 20px;
+    transition: all .50s ease;
+    padding: 0px 5px;
+    border-radius: 60px;
+    transition: all .3s ease;
+}
+.navbar a.active{
+
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 15px;
+    margin-left: 10px;
+    transition: all .50s ease;
+}
+.search, .shop, .user, #menu-icon{
+    display: flex;
+    align-items: center;
+}
+.search i, .shop i, .user i, #menu-icon{
+    margin-right: 20px;
+}
+.btn1{
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 9px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#menu-icon{
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+@media (max-width: 1180px){
+    header{
+        padding: 14px 10px;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .btn1{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background-color: var(--primary);
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0px;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar.open{
+        right: 2%;
+    }
 }
