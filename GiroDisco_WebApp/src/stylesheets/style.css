@@ -144,7 +144,6 @@ a.btn1:hover{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 43vh;
         padding: 10px 0;
         background-color: var(--primary);
         flex-direction: column;
@@ -158,6 +157,7 @@ a.btn1:hover{
         margin: 19px 0px;
         padding: 0px 25px;
         transition: all .50s ease;
+        text-align: center;
     }
     .navbar .resp{
         display: block;
