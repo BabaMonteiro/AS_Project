@@ -51,7 +51,9 @@ header{
 }
 .navbar{
     display: flex;
-    margin-right: 20%;
+    position: absolute;
+    /*margin-left: 15%;*/
+    left: 200px;
 }
 .navbar a{
     margin: 0px 20px;
@@ -59,9 +61,30 @@ header{
     padding: 0px 5px;
     border-radius: 60px;
     transition: all .3s ease;
+    padding-bottom: 3px;
+    display: inline-block;
+    position: relative;
 }
-.navbar a.active{
-
+.navbar a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.25s ease-out;
+}
+.navbar a:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.navbar a.active::before{
+    width: 100%;
+}
+.navbar .resp{
+    display: none;
 }
 .main{
     display: flex;
@@ -79,12 +102,17 @@ header{
 .search i, .shop i, .user i, #menu-icon{
     margin-right: 20px;
 }
-.btn1{
+a.btn1{
     text-align: center;
     background-color: var(--secondary);
-    padding: 9px 30px;
-    border-radius: 10px;
+    padding: 6px 30px;
+    border-radius: 8px;
     font-weight: bold;
+    border: 5px solid var(--secondary);
+}
+a.btn1:hover{
+    background-color: transparent;
+    transition: background-color .15s linear;
 }
 #menu-icon{
     cursor: pointer;
@@ -112,10 +140,12 @@ header{
     }
     .navbar{
         position: absolute;
+        left: initial;
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
+        height: 43vh;
+        padding: 10px 0;
         background-color: var(--primary);
         flex-direction: column;
         justify-content: flex-start;
@@ -124,9 +154,20 @@ header{
     }
     .navbar a{
         display: block;
-        margin: 12px 0px;
+        color: var(--white);
+        margin: 19px 0px;
         padding: 0px 25px;
         transition: all .50s ease;
+    }
+    .navbar .resp{
+        display: block;
+        padding: 7px 0;
+        margin: 10px auto;
+        width: 200px;
+        border: 4px solid var(--secondary);
+    }
+    .navbar a:hover::before{
+        width: 0;
     }
     .navbar.open{
         right: 2%;
