@@ -20,7 +20,6 @@
       .login-entrar {
         text-align: left !important;
         margin-left: 10% !important;
-        
       }
       h1 {
         color: var(--primary) !important;
@@ -37,12 +36,10 @@
         font-size: 18px;
         font-weight: bold;
       }
-      .info-container {
-        text-align: left !important;
-        width: 80% !important;
+      label {
+        color: var(--primary) !important;
         opacity: 50%;
       }
-
       img {
         display: block;
         margin-left: auto;
@@ -50,36 +47,35 @@
         width: 50%;
       }
 
-      .login-btn
-      {
+      .login-btn {
         background-color: var(--secondary) !important;
         color: var(--primary) !important;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center !important;
+        display: flex;
+        margin: auto !important;
         width: 80%;
-        height: 3.5%;
+        height: 4%;
         border-radius: 10px;
-        font-weight: bold;
-        font-size: large;
+        font-weight: bold !important;
+        font-size: large !important;
+        align-content: center !important;
+        justify-content: center !important;
       }
 
-      .signup-btn
-      {
+      .signup-btn {
         background-color: white;
         color: var(--primary) !important;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center !important;
+        display: flex;
+        margin: auto !important;
         width: 80%;
-        height: 3.5%;
+        height: 4%;
         border-radius: 10px;
-        font-weight: bold;
-        font-size: large;
+        border-width: thick !important;
+        font-weight: bold !important;
+        font-size: large !important;
         border-color: var(--secondary) !important;
-        border-width: thick;
+        justify-content: center !important;
       }
     </style>
 
@@ -101,25 +97,29 @@
         <h1 class="mb-1">Entrar</h1>
         <p>Inicia sessão ou cria conta para começares a negociar</p>
       </div>
-      <div class="container mt-5 ml-5 border border-3 rounded info-container">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email ou número de telefone</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Senha</label>
+      </div>
+      <!-- <div class="container mt-5 ml-5 border border-3 rounded info-container">
         <h5>Email ou número de telefone</h5>
       </div>
       <div class="container mt-2 ml-5 border border-3 rounded info-container">
         <h5>Senha</h5>
-      </div>
+      </div> -->
       <div class="login-entrar mt-2">
         <p>Não sabes a senha?</p>
       </div>
-      <div class="mt-4 mb-3">
-        <button class="login-btn">
-          Entrar
+        <button class="login-btn mt-2">
+          <p class="mt-1">Entrar</p>
         </button>
-      </div>
-      <div>
-        <button class="signup-btn mb-5">
-          Criar Conta
+        <button class="signup-btn mt-2 mb-5">
+          <p class="mt-1">Criar Conta</p>
         </button>
-      </div>
     </div>
 
     <script
