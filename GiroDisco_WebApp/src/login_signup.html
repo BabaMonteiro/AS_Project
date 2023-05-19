@@ -7,20 +7,6 @@
     <title>Login/SignUp Window</title>
 
     <style>
-      .login-container {
-        border: 20px solid #f1d0d2;
-        border-width: 20px;
-        border-radius: 50px;
-        width: 35% !important;
-      }
-      .login-logo {
-        width: 280px;
-        height: auto;
-      }
-      .login-entrar {
-        text-align: left !important;
-        margin-left: 10% !important;
-      }
       h1 {
         color: var(--primary) !important;
       }
@@ -46,37 +32,6 @@
         margin-right: auto;
         width: 50%;
       }
-
-      .login-btn {
-        background-color: var(--secondary) !important;
-        color: var(--primary) !important;
-        text-align: center !important;
-        display: flex;
-        margin: auto !important;
-        width: 80%;
-        height: 4%;
-        border-radius: 10px;
-        font-weight: bold !important;
-        font-size: large !important;
-        align-content: center !important;
-        justify-content: center !important;
-      }
-
-      .signup-btn {
-        background-color: white;
-        color: var(--primary) !important;
-        text-align: center !important;
-        display: flex;
-        margin: auto !important;
-        width: 80%;
-        height: 4%;
-        border-radius: 10px;
-        border-width: thick !important;
-        font-weight: bold !important;
-        font-size: large !important;
-        border-color: var(--secondary) !important;
-        justify-content: center !important;
-      }
     </style>
 
     <link
@@ -93,33 +48,39 @@
         alt="Giro Disco Logo"
         class="login-logo mt-1"
       />
-      <div class="login-entrar mt-4">
+      <div class="login-entrar mt-4 mb-4">
         <h1 class="mb-1">Entrar</h1>
         <p>Inicia sessão ou cria conta para começares a negociar</p>
       </div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email ou número de telefone</label>
+      <div class="form-floating mb-3 mx-auto login-form">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Email</label>
       </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <div class="form-floating mx-auto login-form">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+        />
         <label for="floatingPassword">Senha</label>
       </div>
-      <!-- <div class="container mt-5 ml-5 border border-3 rounded info-container">
-        <h5>Email ou número de telefone</h5>
-      </div>
-      <div class="container mt-2 ml-5 border border-3 rounded info-container">
-        <h5>Senha</h5>
+      <button type="button" class="btn btn-link mt-2 login-naoSabes">
+        Não sabes a senha?
+      </button>
+      <!-- <div class="login-entrar mt-2">
+        <p style="text-decoration: underline">Não sabes a senha?</p>
       </div> -->
-      <div class="login-entrar mt-2">
-        <p>Não sabes a senha?</p>
+      <button class="btn login-btn mt-5">Entrar</button>
+      <div class="login-divider w-75 mt-1">
+        <span>ou</span>
       </div>
-        <button class="login-btn mt-2">
-          <p class="mt-1">Entrar</p>
-        </button>
-        <button class="signup-btn mt-2 mb-5">
-          <p class="mt-1">Criar Conta</p>
-        </button>
+      <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
     </div>
 
     <script
