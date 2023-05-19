@@ -129,6 +129,109 @@ a.btn1:hover {
   display: none;
 }
 
+/**/
+
+/* Login/SignUp */
+
+.login-container {
+  border: 20px solid #f1d0d2;
+  border-width: 20px;
+  border-radius: 50px;
+  width: 35% !important;
+  transition: all .5s linear;
+}
+
+.login-logo {
+  width: 280px;
+  height: auto;
+}
+
+.login-entrar {
+  text-align: left !important;
+  margin-left: 10% !important;
+}
+
+.login-naoSabes {
+  display: flex !important;
+  margin-left: 8% !important;
+  text-decoration: underline;
+  color: var(--primary) !important;
+}
+
+.login-naoSabes:hover {
+  opacity: 70%;
+}
+
+.login-btn {
+  width: 80%;
+  height: 40px;
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  color: var(--primary) !important;
+  display: flex !important;
+  margin: auto !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: large !important;
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.login-btn:hover {
+  opacity: 70%;
+}
+
+.signup-btn {
+  width: 80%;
+  height: 40px;
+  color: var(--primary) !important;
+  border-color: var(--secondary) !important;
+  text-align: center !important;
+  display: flex !important;
+  margin: auto !important;
+  font-weight: bold !important;
+  font-size: large !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-width: 5px !important;
+}
+
+.signup-btn:hover {
+  opacity: 70%;
+}
+
+.login-form {
+  width: 80% !important;
+}
+
+.login-divider {
+  color: var(--primary) !important;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex-grow: 1;
+  background-color: var(--primary);
+  opacity: 80%;
+  height: 2px;
+  margin: 5%;
+}
+
+.login-divider span {
+  font-weight: bold;
+  color: var(--primary);
+  opacity: 80%;
+  text-transform: uppercase;
+}
+
+/**/
+
+
 @media (max-width: 1180px) {
   header {
     padding: 14px 10px;
@@ -181,101 +284,4 @@ a.btn1:hover {
   .navbar.open {
     right: 2%;
   }
-}
-
-/* Login/SignUp */
-
-.login-container {
-  border: 20px solid #f1d0d2;
-  border-width: 20px;
-  border-radius: 50px;
-  width: 35% !important;
-}
-
-.login-logo {
-  width: 280px;
-  height: auto;
-}
-
-.login-entrar {
-  text-align: left !important;
-  margin-left: 10% !important;
-}
-
-.login-naoSabes {
-  display: flex !important;
-  margin-left: 8% !important;
-  text-decoration: underline;
-  color: var(--primary) !important;
-}
-
-.login-naoSabes:hover {
-  opacity: 70%;
-}
-
-.login-btn {
-  width: 80%;
-  height: 4%;
-  background-color: var(--secondary) !important;
-  border-color: var(--secondary) !important;
-  color: var(--primary) !important;
-  display: flex !important;
-  margin: auto !important;
-  text-align: center !important;
-  font-weight: bold !important;
-  font-size: large !important;
-  align-content: center !important;
-  justify-content: center !important;
-}
-
-.login-btn:hover {
-  opacity: 70%;
-}
-
-.signup-btn {
-  width: 80%;
-  height: 4%;
-  color: var(--primary) !important;
-  border-color: var(--secondary) !important;
-  text-align: center !important;
-  display: flex !important;
-  margin: auto !important;
-  font-weight: bold !important;
-  font-size: large !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border-width: 5px !important;
-}
-
-.signup-btn:hover {
-  opacity: 70%;
-}
-
-.login-form {
-  width: 80% !important;
-}
-
-.login-divider {
-  color: var(--primary) !important;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-}
-
-.login-divider::before,
-.login-divider::after {
-  content: "";
-  flex-grow: 1;
-  background-color: var(--primary);
-  opacity: 80%;
-  height: 2px;
-  margin: 5%;
-}
-
-.login-divider span {
-  font-weight: bold;
-  color: var(--primary);
-  opacity: 80%;
-  text-transform: uppercase;
 }
