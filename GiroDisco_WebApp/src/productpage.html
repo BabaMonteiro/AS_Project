@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+  <style>
+        
+    .row{
+        margin-top: 101px;
+    }
+    
+    .photo-slider {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .photo-thumbnails {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding-left: 30px;
+        height: 100%;
+    }
+
+    .photo-thumbnails > img {
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 150px;
+        height: calc(100% / 3);
+        
+    }
+
+    .photo-main {
+        margin-right: 0px;
+        width: 600px;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .photo-main img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .product {
+        margin-right: 70px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating{
+        width: 200px;
+        height: 40px;
+    }
+
+    .star {
+        height: 100%;
+        font-size: 30px;
+        width: calc(100% / 5);
+    }
+    .product-info {
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: #444142;
+        color: white;
+        padding: 20px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-info-text {
+        margin-left: 10px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-condition {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product-price {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seller {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .seller-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .seller-picture {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .seller-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seller-name {
+        font-weight: bold;
+    }
+
+    .seller-location {
+        color: #888888;
+    }
+
+    .buy-button {
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+        height: 57px;
+        background-color: #f1d0d2;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="photo-slider">
+            <div class="photo-thumbnails">
+              <img src="../assets/img/album_cover.jpg"  class="thumbnail">
+              <img src="../assets/img/album_cover.jpg"  class="thumbnail">
+              <img src="../assets/img/album_cover.jpg"  class="thumbnail">
+            </div>
+            <div class="photo-main">
+              <img src="../assets/img/album_cover.jpg" alt="Main Picture">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="product">
+                <p style="font-size: 20px; font-weight: lighter;">Genre</p>
+                <h2>Rockstar</h2>
+                <p>Author</p>
+                <p>Year</p>
+                <div class="rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="product-info">
+                    <div class="top">
+                        <div class="product-condition">
+                            <p style="margin-bottom: 0" ><strong>Condição:</strong></p>
+                            <p style="margin-bottom: 0"><strong>New</strong></p>
+                        </div>
+                        <div class="product-price">
+                            <p style="margin-bottom: 0";><strong>Price:</strong></p>
+                            <p style="margin-top: 0;">12€</p>
+                        </div>
+                    </div>
+                    <p><strong>Descrição:</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis orci eu tortor dignissim fringilla. Nullam ac diam sit amet quam vehicula convallis a vitae turpis.</p>
+                    <div class="seller">
+                      <div class="seller-info">
+                        <img src="seller-picture.jpg" class="seller-picture">
+                        <div class="seller-details">
+                          <p class="seller-name">Seller Name</p>
+                          <p class="seller-location">Location</p>
+                        </div>
+                      </div>
+                      <button class="buy-button">Comprar</button>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.
