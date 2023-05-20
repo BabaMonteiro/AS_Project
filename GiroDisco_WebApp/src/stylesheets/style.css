@@ -279,3 +279,60 @@ a.btn1:hover {
   opacity: 80%;
   text-transform: uppercase;
 }
+
+/* Profile */
+
+.profile-img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto !important;
+  margin-top: 5% !important;
+  opacity: 75%;
+}
+
+.profile-img:hover {
+    opacity: 70%;
+}
+
+.profile-icon-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.profile-icon {
+  width: 40%;
+  height: auto;
+  color: var(--primary);
+}
+
+.profile-icon:hover {
+  opacity: 70%;
+}
+
+.profile-edit-btn {
+  width: 40%;
+  height: 4%;
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  color: var(--primary) !important;
+  display: flex !important;
+  margin: auto !important;
+  margin-bottom: 5% !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: large !important;
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.profile-edit-btn:hover {
+  opacity: 70%;
+}
