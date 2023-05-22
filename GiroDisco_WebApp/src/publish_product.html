@@ -145,10 +145,38 @@
         document.getElementById("imageContainer").innerHTML = "";
       }
     </script>
+
+    <script type="text/javascript" src="../src/scripts/navbar.js"></script>
   </head>
   <body>
+    <!--Navbar-->
+    <header>
+      <a href="../src/index.html"
+        ><img class="logo" src="../assets/img/logo.png"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Recomendações</a></li>
+        <li><a href="#">Mapa</a></li>
+        <li><a href="../src/about.html">Acerca</a></li>
+        <li>
+          <a href="../src/publish_product.html" class="btn1 resp">Anunciar</a>
+        </li>
+      </ul>
+
+      <div class="main">
+        <a href="../src/publish_product.html" class="btn1">Anunciar</a>
+        <a href="#" class="search"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="#" class="user"><i class="fa-regular fa-circle-user"></i></a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <!---->
     <div class="publish-main-div">
-      <h1>Publicar anúncio</h1>
+      <br>
+      <h1 >Publicar anúncio</h1>
 
       <div class="publish-sec-div mt-3">
         <h3>Informação acerca do vinil</h3>
@@ -369,10 +397,16 @@
 
       <div class="publish-final-div mt-3 d-flex justify-content-end">
         <div class="pt-2 pb-2" style="margin-right: 3%">
-          <button type="button" class="btn btn-link mt-2" style="color: var(--primary);">
+          <button
+            type="button"
+            class="btn btn-link mt-2"
+            style="color: var(--primary)"
+          >
             Pré-visualizar
           </button>
-          <button class="btn publish-btn" style="width:175px; height: 40">Publicar anúncio</button>
+          <button class="btn publish-btn" style="width: 175px; height: 40">
+            Publicar anúncio
+          </button>
         </div>
       </div>
     </div>
