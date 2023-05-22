@@ -1,7 +1,7 @@
 var map = L.map('map').setView([40.64095818867095, -8.653921595656492], 17);
 
         var myIcon = L.icon({
-            iconUrl: './assets/icons/vinyl-store.png', // Replace with the path to your vinyl store icon image
+            iconUrl: '../../assets/img/logo.png', // Replace with the path to your vinyl store icon image
             iconSize: [30, 30],
             iconAnchor: [15, 35],
             popupAnchor: [0, -30]

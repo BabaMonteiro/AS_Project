@@ -21,15 +21,15 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            margin-top: 200px;
-
+            margin-top: 150px;
+            margin-bottom: 70px;
         }
 
         #map {
             width: 50%;
             height: 400px;
-            border-radius: 10px;
-            border: 10px solid var(--primary);
+            border-radius: 15px;
+            border: 5px solid var(--primary);
         }
 
         h2{
@@ -37,20 +37,21 @@
             border-radius: 20px;
             color: var(--primary);
             margin-bottom: 20px;
+            padding: 5px 18px;
         }
 
     </style>
 </head>
 
-<body class="oflw">
+<body>
          <!--Navbar-->
       <header>
-        <a href="#"><img class="logo" src="../assets/img/logo.png"/></a>   
+        <a href="index.html"><img class="logo" src="../assets/img/logo.png"/></a>   
         <ul class="navbar">
             <li><a href="#">Recomendações</a></li>
-            <li><a href="../src/map.html">Mapa</a></li>
-            <li><a href="../src/about.html">Acerca</a></li>
-            <li><a href="../src/publish_product.html" class="btn1 resp">Anunciar</a></li>
+            <li><a href="map.html">Mapa</a></li>
+            <li><a href="about.html">Acerca</a></li>
+            <li><a href="publish_product.html" class="btn1 resp">Anunciar</a></li>
         </ul>
 
         <div class="main">
@@ -67,8 +68,24 @@
         <h2>Onde encontrar as melhores lojas?</h2>
         <div id="map"></div>
     </div>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <ul class="footer-list">
+            <li><a class="footer-nav" href="">Recomendações</a></li>
+            <li><a class="footer-nav" href="map.html">Mapa</a></li>
+            <li><a class="footer-nav" href="about.html">Acerca</a></li>
+            <li><a href="publish_product.html" class="btn1">Anunciar</a></li>
+        </ul>
+        <p class="copyright"><i class="fa-regular fa-copyright"></i> 2023 GiróDisco | All rights reserved</p>
+    </section>
     </script>
 </body>
 
 <script  type="text/javascript" src="scripts/map.js"></script>
+<script type="text/javascript" src="scripts/navbar.js"></script>
 </html>
