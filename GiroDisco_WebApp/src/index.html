@@ -1,327 +1,365 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" href="../src/stylesheets/style.css" />
+  <head>
+    <link rel="stylesheet" href="../src/stylesheets/style.css" />
 
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!--Open Sans-->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <!---->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Open Sans-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!---->
 
-        <!--Icons-->
+    <!--Icons-->
 
-        <script src="https://kit.fontawesome.com/a3d29aa1b6.js" crossorigin="anonymous"></script>
-        <!---->
-    </head>
+    <script
+      src="https://kit.fontawesome.com/a3d29aa1b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---->
+  </head>
 
-    <body class="oflw">
-        <!--Começo Gif-->
-        <div class = "toggle">
-            <div style="
-            background-color: rgba(255, 255, 255, 0.15);
-            width: auto;
-            height: 100%;
-            ">
-              <h1 class="giro">Giró Disco</h1>
-      
-              <h3 class="motto">Mas não toques o mesmo</h3>
-      
-              <button class="btn-start rounded-pill" href="#">Começar</button>
+  <body class="oflw">
+    <!--Começo Gif-->
+    <div class="toggle">
+      <div
+        style="
+          background-color: rgba(255, 255, 255, 0.15);
+          width: auto;
+          height: 100%;
+        "
+      >
+        <h1 class="giro" style="color: white !important">Giró Disco</h1>
+
+        <h3 class="motto">Mas não toques o mesmo</h3>
+
+        <button class="btn-start rounded-pill" href="#">Começar</button>
+      </div>
+    </div>
+    <!---->
+
+    <!--Navbar-->
+    <header>
+      <a href="../src/index.html"
+        ><img class="logo" src="../assets/img/logo.png"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Recomendações</a></li>
+        <li><a href="#">Mapa</a></li>
+        <li><a href="../src/about.html">Acerca</a></li>
+        <li>
+          <a href="../src/publish_product.html" class="btn1 resp">Anunciar</a>
+        </li>
+      </ul>
+
+      <div class="main">
+        <a href="../src/publish_product.html" class="btn1">Anunciar</a>
+        <a href="#" class="search"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="#" class="user"><i class="fa-regular fa-circle-user"></i></a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <!---->
+
+    <!--Main Page-->
+    <div class="cnt-1">
+      <div class="left-panel">
+        <div class="product-filters">
+          <div class="drpdown drpdown-plus">
+            <div class="select">
+              <span class="selected-plus">Género</span>
+              <div class="caret caret-plus">
+                <i class="fa-solid fa-plus plus-toggle"></i>
+              </div>
             </div>
-        </div>
-        <!---->
-
-        <!--Navbar-->
-        <header>
-            <a href="#"><img class="logo" src="../assets/img/logo.png"/></a>   
-            <ul class="navbar">
-                <li><a href="#">Recomendações</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">Acerca</a></li>
-                <li><a href="#" class="btn1 resp">Anunciar</a></li>
+            <ul class="drpdown-menu">
+              <li>Hip-hop</li>
+              <li>Country</li>
+              <li>Pop</li>
+              <li>Rock</li>
             </ul>
-
-            <div class="main">
-                <a href="#" class="btn1">Anunciar</a>
-                <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
-                <a href="#" class="user"><i class="fa-regular fa-circle-user"></i></a>
-                <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+          </div>
+          <div class="drpdown drpdown-plus">
+            <div class="select">
+              <span class="selected-plus">Ano</span>
+              <div class="caret caret-plus">
+                <i class="fa-solid fa-plus plus-toggle"></i>
+              </div>
             </div>
-        </header>
-        <!---->
-
-        <!--Main Page-->
-        <div class="cnt-1">
-            <div class="left-panel">
-                <div class="product-filters">
-                    <div class="drpdown drpdown-plus">
-                        <div class="select">
-                            <span class="selected-plus">Género</span>
-                            <div class="caret caret-plus"><i class="fa-solid fa-plus plus-toggle"></i></i></i></div>
-                        </div>
-                        <ul class="drpdown-menu">
-                            <li>Hip-hop</li>
-                            <li>Country</li>
-                            <li>Pop</li>
-                            <li>Rock</li>
-                        </ul>
-                    </div>
-                    <div class="drpdown drpdown-plus">
-                        <div class="select">
-                            <span class="selected-plus">Ano</span>
-                            <div class="caret caret-plus"><i class="fa-solid fa-plus plus-toggle"></i></i></i></div>
-                        </div>
-                        <ul class="drpdown-menu">
-                            <li>2020+</li>
-                            <li>2010+</li>
-                            <li>2000+</li>
-                            <li>1990+</li>
-                            <li>1980+</li>
-                            <li>1970+</li>
-                        </ul>
-                    </div>
-                    <div class="drpdown drpdown-plus">
-                        <div class="select">
-                            <span class="selected-plus">Avaliação</span>
-                            <div class="caret caret-plus"><i class="fa-solid fa-plus plus-toggle"></i></i></i></div>
-                        </div>
-                        <ul class="drpdown-menu">
-                            <li>
-                                <ul class="rating">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="rating">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="rating">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="rating">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="rating">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="price">
-                        <div>
-                            <span class="selected-plus">Preço</span>
-                        </div>
-                        <div class="slider">
-                            <div class="progress"></div>
-                        </div>
-                        <div class="range-input">
-                            <input type="range" class="range-min" min="5" max="100" value="20" step="5"/>
-                            <input type="range" class="range-max" min="5" max="100" value="80" step="5"/>
-                        </div>
-                        <div class="price-input">
-                            <div class="field">
-                                <span>€</span>
-                                <input type="number" class="input-min" value="20"/>
-                               
-                            </div>
-                            <div class="separator">-</div>
-                            <div class="field">
-                                <span>€</span>
-                                <input type="number" class="input-max" value="80"/>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-separator"></div>
+            <ul class="drpdown-menu">
+              <li>2020+</li>
+              <li>2010+</li>
+              <li>2000+</li>
+              <li>1990+</li>
+              <li>1980+</li>
+              <li>1970+</li>
+            </ul>
+          </div>
+          <div class="drpdown drpdown-plus">
+            <div class="select">
+              <span class="selected-plus">Avaliação</span>
+              <div class="caret caret-plus">
+                <i class="fa-solid fa-plus plus-toggle"></i>
+              </div>
             </div>
-            <div class="right-panel">
-                <div class="drpdown drpdown-filter">
-                    <div class="select">
-                        <span class="selected">Melhor condição</span>
-                        <div class="caret"><i class="fa-solid fa-angle-down"></i></div>
-                    </div>
-                    <ul class="drpdown-menu">
-                        <li class="active">Melhor condição</li>
-                        <li>Preço ascendente</li>
-                        <li>Preço descendente</li>
-                        <li>Data de publicação</li>
-                    </ul>
-                </div>
-                <div class="product-grid">
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Rockstar</li>
-                            <li>Post Malone</li>
-                            <li>2018</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Hip-Hop</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>19.99€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Title</li>
-                            <li>Singer</li>
-                            <li>Release</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Genre</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>Price€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Title</li>
-                            <li>Singer</li>
-                            <li>Release</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Genre</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>Price€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Title</li>
-                            <li>Singer</li>
-                            <li>Release</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Genre</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>Price€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Title</li>
-                            <li>Singer</li>
-                            <li>Release</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Genre</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>Price€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="product-box">
-                        <div class="product-img"><i class="fa-regular fa-heart product-fav"></i></div>
-                        <ul class="product-infoL">
-                            <li class="product-title">Title</li>
-                            <li>Singer</li>
-                            <li>Release</li>
-                        </ul>
-                        <ul class="product-infoR">
-                            <li class="product-genre">Genre</li>
-                            <ul class="rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                        </ul>
-                        <ul class="product-cart">
-                            <li>Price€</li>
-                            <li><i class="fa-solid fa-plus product-add"></i></li>
-                        </ul>
-
-                    </div>
-                </div>
+            <ul class="drpdown-menu">
+              <li>
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="price">
+            <div>
+              <span class="selected-plus">Preço</span>
             </div>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <input
+                type="range"
+                class="range-min"
+                min="5"
+                max="100"
+                value="20"
+                step="5"
+              />
+              <input
+                type="range"
+                class="range-max"
+                min="5"
+                max="100"
+                value="80"
+                step="5"
+              />
+            </div>
+            <div class="price-input">
+              <div class="field">
+                <span>€</span>
+                <input type="number" class="input-min" value="20" />
+              </div>
+              <div class="separator">-</div>
+              <div class="field">
+                <span>€</span>
+                <input type="number" class="input-max" value="80" />
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <!---->
-        <script type="text/javascript" src="scripts/main.js"></script>
-    </body>
+        <div class="panel-separator"></div>
+      </div>
+      <div class="right-panel">
+        <div class="drpdown drpdown-filter">
+          <div class="select">
+            <span class="selected">Melhor condição</span>
+            <div class="caret"><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+          <ul class="drpdown-menu">
+            <li class="active">Melhor condição</li>
+            <li>Preço ascendente</li>
+            <li>Preço descendente</li>
+            <li>Data de publicação</li>
+          </ul>
+        </div>
+        <div class="product-grid">
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Rockstar</li>
+              <li>Post Malone</li>
+              <li>2018</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Hip-Hop</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>19.99€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Title</li>
+              <li>Singer</li>
+              <li>Release</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Genre</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>Price€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Title</li>
+              <li>Singer</li>
+              <li>Release</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Genre</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>Price€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Title</li>
+              <li>Singer</li>
+              <li>Release</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Genre</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>Price€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Title</li>
+              <li>Singer</li>
+              <li>Release</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Genre</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>Price€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+          <div class="product-box">
+            <div class="product-img">
+              <i class="fa-regular fa-heart product-fav"></i>
+            </div>
+            <ul class="product-infoL">
+              <li class="product-title">Title</li>
+              <li>Singer</li>
+              <li>Release</li>
+            </ul>
+            <ul class="product-infoR">
+              <li class="product-genre">Genre</li>
+              <ul class="rating">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </ul>
+            <ul class="product-cart">
+              <li>Price€</li>
+              <li><i class="fa-solid fa-plus product-add"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---->
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
 </html>
