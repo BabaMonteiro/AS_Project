@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Pimp A Butterfly</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/stylesheets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a3d29aa1b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      p,
+      h2 {
+        color: var(--primary);
+      }
+
+      .row {
+        margin-top: 10%;
+        margin-left: 1%;
+      }
+
+      .photo-slider {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .photo-thumbnails {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        padding-left: 30px;
+        height: 100%;
+      }
+
+      .photo-thumbnails > img {
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 200px;
+        height: auto;
+      }
+
+      .photo-thumbnails :hover {
+        border: 3px solid var(--primary);
+      }
+
+      .photo-main > img {
+        width: 620px;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .product {
+        margin-right: 70px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .rating {
+        width: 200px;
+        height: 40px;
+      }
+
+      .star {
+        height: 100%;
+        font-size: 30px;
+        width: calc(100% / 5);
+      }
+      .product-info {
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: var(--primary);
+        padding: 20px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        width: 875px;
+      }
+
+      .product-info-text {
+        margin-left: 10px;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-condition {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+      }
+
+      .star2 {
+        color: #f1d0d2;
+        font-size: 20px;
+      }
+
+      .product-price {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sample {
+        display: flex;
+        align-items: center;
+      }
+
+      .sample > img {
+        margin-left: 10px;
+        width: 20px;
+        height: auto;
+        cursor: pointer;
+        padding-bottom: 3px;
+      }
+
+      .seller {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .seller-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .seller-picture {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .seller-details {
+        display: block;
+        align-items: center;
+        text-align: left;
+        margin: auto;
+        margin-left: 20px;
+      }
+
+      .seller-name {
+        font-weight: bold;
+        color: white !important;
+      }
+
+      .seller-location {
+        color: white !important;
+      }
+
+      .buy-button {
+        color: var(--primary);
+        font-weight: bolder;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+        height: 57px;
+        background-color: var(--secondary);
+      }
+
+      .buy-button :hover {
+        border: 3px solid var(--primary);
+      }
+
+      /* .sample-player{
+        margin: 70px 20px;
+        background-color: #444142;
+        width: 100%;
+        height: 100px;
+    } */
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <header>
+      <a href="../src/index.html"
+        ><img class="logo" src="../assets/img/logo.png"
+      /></a>
+      <ul class="navbar">
+        <li><a href="#">Recomendações</a></li>
+        <li><a href="../src/map.html">Mapa</a></li>
+        <li><a href="../src/about.html">Acerca</a></li>
+        <li>
+          <a href="../src/publish_product.html" class="btn1 resp">Anunciar</a>
+        </li>
+      </ul>
+
+      <div class="main">
+        <a href="../src/publish_product.html" class="btn1">Anunciar</a>
+        <a href="#" class="search"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="../src/profile.html" class="user"
+          ><i class="fa-regular fa-circle-user"></i
+        ></a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <!---->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="photo-slider">
+          <div class="photo-thumbnails">
+            <img
+              src="../assets/img/To_Pimp_a_Butterfly_2.jpg"
+              class="thumbnail"
+            />
+            <img
+              src="../assets/img/To_Pimp_a_Butterfly_3.jpg"
+              class="thumbnail"
+            />
+            <img
+              src="../assets/img/To_Pimp_A_Butterfly_3.webp"
+              class="thumbnail"
+            />
+          </div>
+          <div class="photo-main">
+            <img
+              src="../assets/img/To_Pimp_a_Butterfly.jpg"
+              alt="To Pimp A Butterfly"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="product">
+          <p
+            style="
+              font-size: 20px;
+              font-weight: lighter;
+              color: #888888 !important;
+            "
+          >
+            Género / Hip-Hop
+          </p>
+          <h2>To Pimp A Butterfly</h2>
+          <p>Kendrick Lamar</p>
+          <p>2015</p>
+
+          <div class="product-info">
+            <div class="top">
+              <div class="product-condition">
+                <h5 class="text-white"><strong>Condição</strong></h5>
+                <div class="rating2">
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                  <span class="star2">&#9733;</span>
+                </div>
+              </div>
+              <div class="product-price text-white">
+                <h5 class="text-white"><strong>Preço</strong></h5>
+                <h3 class="text-white"><strong>24.99€</strong></h3>
+              </div>
+            </div>
+            <h5 class="text-white"><strong>Descrição</strong></h5>
+            <p class="text-white" style="text-align: justify">
+              TPAB é um álbum que lida com o materialismo, o racismo, a opressão
+              e, acima de tudo, o amor próprio. O título do álbum, To Pimp a
+              Butterfly, embora seja uma referência inteligente ao livro "To
+              Kill a Mockingbird" de Harper Lee, também é uma metáfora para a
+              exploração literal de algo tão belo e livre como uma borboleta.
+            </p>
+            <div class="sample">
+              <h5 class="text-white"><strong>Sample</strong></h5>
+              <img src="../assets/img/playbutton.png" />
+            </div>
+            <div class="seller">
+              <div class="seller-info">
+                <a href="../src/profile.html">
+                  <img
+                    src="../assets/img/Fantano.jpeg"
+                    class="seller-picture"
+                  />
+                </a>
+                <div class="seller-details">
+                  <h5 class="seller-name">António Fandango</h5>
+                  <p class="seller-location">Aveiro, Portugal</p>
+                </div>
+              </div>
+              <a href="../src/mbway.html">
+                <button class="btn btn-button buy-button">Comprar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; margin-top: 30px">
+      <iframe
+        style="border-radius: 12px; margin: auto"
+        src="https://open.spotify.com/embed/album/7ycBtnsMtyVbbwTfJwRjSP?utm_source=generator"
+        width="94%"
+        height="152"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0."></script>
+  </body>
+</html>
