@@ -1,14 +1,12 @@
-let user = document.querySelector('.user');
-let cross = document.querySelector('.popup-close');
-let popup = document.querySelector('.wrapper-popup');
-let ovflw = document.querySelector('.oflw');
-user.onclick = () =>{
-    popup.style.display = "block";
-    popup.style.opacity = "1";
-    ovflw.style.overflowY = "hidden";
+let wrapper = document.querySelector('.wrapper-popup');
+let openBtn = document.querySelector('.popup-open');
+let closeBtn = document.querySelector('.popup-close');
+
+openBtn.onclick = () => {
+    wrapper.style.display = "block";
+    setTimeout(function() {wrapper.style.opacity = "1";}, 250);
 }
-cross.onclick = () =>{
-    popup.style.opacity = "0";
-    setTimeout(function() {popup.style.display = "none";}, 550);
-    ovflw.style.overflowY = "scroll";
+closeBtn.onclick = () => {
+    wrapper.style.opacity = "0";
+    setTimeout(function() { wrapper.style.display = "none";}, 550);
 }

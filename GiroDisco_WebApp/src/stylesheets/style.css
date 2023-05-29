@@ -18,7 +18,7 @@ Font Usage:
 body,html{
   font-family: "Open Sans", sans-serif !important;
   font-weight: 600 !important;
-  height: 100%;
+  height: 130%; /*Temporário, mudar para 100% e resolver*/
 }
 .oflw {
   overflow-y: hidden;
@@ -146,6 +146,7 @@ a.btn1:hover {
 .footer{
   padding: 30px 0 !important;
   background-color: var(--primary) !important;
+  margin-top: 100px;
 }
 .footer .social{
     text-align: center !important;
@@ -316,6 +317,7 @@ a.btn1:hover {
   width: 65%;
   position: relative;
   float: right;
+
 }
 
 /*Dropdown styling*/
@@ -572,21 +574,34 @@ input[type="range"]::-moz-range-thumb {
 /**/
 
 /* Login/SignUp Pop-up */
-
+.wrapper-popup{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(50, 50, 50, 0.568);
+  padding-top: 15px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0px;
+  display: none;
+  opacity: 0;
+  transition: all .5s linear;
+}
+.popup-close{
+  position: relative;
+  float: right;
+  color: var(--white);
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
 .login-container {
-  border: 20px solid #f1d0d2;
+  border: 15px solid #f1d0d2;
   background-color: var(--white);
-  border-width: 20px;
-  border-radius: 50px;
-  width: 45% !important;
+  border-radius: 25px;
+  width: 40% !important;
   transition: all 0.5s linear;
-
 }
 
-.login-logo {
-  width: 280px;
-  height: auto;
-}
 
 .login-entrar {
   text-align: left !important;
@@ -603,7 +618,13 @@ input[type="range"]::-moz-range-thumb {
 .login-naoSabes:hover {
   opacity: 70%;
 }
-
+.form-control{
+  padding: 5px 10px !important;
+  height: 40px !important;
+}
+.form-floating>label{
+  padding: 7px 15px !important;
+}
 .login-btn,
 .signup-btn {
   width: 80%;
@@ -611,7 +632,7 @@ input[type="range"]::-moz-range-thumb {
   border-color: var(--secondary) !important;
   color: var(--primary) !important;
   display: flex !important;
-  margin: auto !important;
+  margin: 0 auto !important;
   text-align: center !important;
   font-weight: bold !important;
   font-size: large !important;
@@ -661,6 +682,8 @@ input[type="range"]::-moz-range-thumb {
   text-transform: uppercase;
 }
 .login-container h1 {
+  font-size: 26px;
+  font-weight: bold;
   color: var(--primary) !important;
 }
 
@@ -674,8 +697,10 @@ input[type="range"]::-moz-range-thumb {
 .login-container p {
   color: var(--primary) !important;
   opacity: 80%;
+  font-size: 15px !important;
   font-weight: bold;
 }
+
 
 .login-container label {
   color: var(--primary) !important;
@@ -684,9 +709,8 @@ input[type="range"]::-moz-range-thumb {
 
 .login-container img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: 0px auto;
+  width: 40%;
 }
 /**/
 
@@ -702,6 +726,7 @@ input[type="range"]::-moz-range-thumb {
 
   /*Grid Display*/
   .product-grid {
+    position: relative;
     grid-template-columns: 45% 45%;
     grid-gap: 5%;
     grid-row-gap: 30px;
@@ -766,10 +791,6 @@ input[type="range"]::-moz-range-thumb {
 
   .login-container {
     width: 80% !important;
-  }
-
-  .login-logo {
-    width: 250px !important;
   }
 }
 @media (max-width: 860px) {
