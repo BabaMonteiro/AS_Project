@@ -25,7 +25,6 @@
 
       .row {
         margin-top: 10%;
-        margin-left: 1%;
       }
 
       .photo-slider {
@@ -55,6 +54,9 @@
         border: 3px solid var(--primary);
       }
 
+      .photo-main{
+        flex-grow: 1; 
+      }
       .photo-main > img {
         width: 620px;
         height: auto;
@@ -235,7 +237,7 @@
             />
           </div>
           <div class="photo-main">
-            <img
+            <img id="main-photo"
               src="../assets/img/To_Pimp_a_Butterfly.jpg"
               alt="To Pimp A Butterfly"
             />
@@ -321,5 +323,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0."></script>
+    <script src="./scripts/productpage.js"></script>
   </body>
 </html>
