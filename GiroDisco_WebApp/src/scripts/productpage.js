@@ -10,3 +10,19 @@ thumbnails.forEach((thumbnail) => {
     mainPhoto.setAttribute('src', thumbnailSrc);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sellerLink = document.querySelector(".seller-link");
+  const sellerName = document.querySelector(".seller-name").innerText;
+  const sellerLocation = document.querySelector(".seller-location").innerText;
+  
+
+  sellerLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    const profileUrl = sellerLink.getAttribute("href");
+    const url = new URL(profileUrl, window.location.href);
+    url.searchParams.set("firstName", sellerName);
+    url.searchParams.set("location", sellerLocation);
+    window.location.href = url.href;
+  });
+});
