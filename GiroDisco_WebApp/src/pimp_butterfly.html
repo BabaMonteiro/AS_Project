@@ -87,7 +87,7 @@
         overflow: auto;
         display: flex;
         flex-direction: column;
-        width: 875px;
+        width: 865px;
       }
 
       .product-info-text {
@@ -189,6 +189,118 @@
   </head>
 
   <body>
+    <!--Pop-up-->
+    <div class="wrapper-popup">
+        <i class="fa-solid fa-x popup-close"></i>
+        <div class="container login-container" style="padding: 20px; margin-top: 5px;">
+          <img
+            src="../assets/img/logo.png"
+            alt="Giro Disco Logo"
+            class="login-logo mt-1"
+          />
+          <div class="login-entrar mt-4 mb-4">
+            <h1 class="mb-1">Entrar</h1>
+            <p>Inicia sessão ou cria conta para começares a negociar</p>
+          </div>
+          <div class="form-floating mb-3 mx-auto login-form">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mx-auto login-form">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Senha</label>
+          </div>
+          <button type="button" class="btn btn-link mt-2 login-naoSabes">
+            Não sabes a senha?
+          </button>
+          <button class="btn login-btn mt-3">Entrar</button>
+          <div class="login-divider w-75 mt-1">
+            <span>ou</span>
+          </div>
+          <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
+        </div>
+    </div>
+    <!--Popup mbway-->
+    <div id="wrapper-popup2" class="wrapper-popup2">
+        <i id="popup2-close"class="fa-solid fa-x popup-close"></i>
+        <div class="container mbway-container">
+            <img class="mbway-logo" src="/assets/img/mbway.png"/>
+            <div class="texts">
+                <h1>Efetuar pedido de pagamento</h1>
+                <p>Introduz o teu número de telefone para procederes</p>
+            </div>
+            <div class="form-floating mb-3 mx-auto login-form">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput" style="color: rgb(192, 192, 192);">Número de telefone</label>
+            </div>
+            <button class="btn login-btn mt-3">Comprar</button>
+        </div>
+    </div>
+    <!--User popup-->
+    <div class="wrapper-popup2" id="wrapper-popup3">
+      <i id="popup3-close"class="fa-solid fa-x popup-close"></i>
+      <div class="container login-container mt-5">
+          <!-- Profile Picture -->
+          <img
+            src="../assets/img/account.png"
+            alt="John Doe Profile Pic"
+            class="profile-img"
+          />
+          <!-- Profile Info -->
+          <div class="form-floating mx-auto login-form mt-4">
+            <input class="form-control" id="firstNameInput" placeholder="Nome" value="">
+            <label for="firstNameInput">Nome</label>
+          </div>
+          <div class="form-floating mx-auto login-form mt-2">
+            <input class="form-control" id="lastNameInput" placeholder="Apelido" value="">
+            <label for="lastNameInput">Apelido</label>
+          </div>
+          <div class="form-floating mx-auto login-form mt-2">
+            <input class="form-control" id="emailInput" placeholder="Email" />
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="form-floating mx-auto login-form mt-2">
+            <input class="form-control" id="contactInput" placeholder="Contacto" />
+            <label for="contactInput">Contacto</label>
+          </div>
+          <div class="form-floating mx-auto login-form mt-2">
+            <input class="form-control" id="locationInput" placeholder="Localização" value="">
+            <label for="locationInput">Localização</label>
+          </div>
+          <!-- Profile Socials -->
+          <div class="profile-icon-container">
+            <div class="profile-icon">
+              <i class="fa-brands fa-spotify"></i>
+            </div>
+            <div class="profile-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="profile-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="profile-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <!-- Edit Profile -->
+          <button class="btn profile-edit-btn mt-5">Editar</button>
+      </div>
+    </div>
     <!--Navbar-->
     <header>
       <a href="../src/index.html"
@@ -209,7 +321,7 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
-        <a href="../src/profile.html" class="user"
+        <a href="#" class="user popup-open"
           ><i class="fa-regular fa-circle-user"></i
         ></a>
         <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
@@ -288,7 +400,7 @@
             </div>
             <div class="seller">
               <div class="seller-info">
-                <a href="../src/profile.html">
+                <a href="#" class="popup-open3">
                   <img
                     src="../assets/img/Fantano.jpeg"
                     class="seller-picture"
@@ -299,8 +411,8 @@
                   <p class="seller-location">Aveiro, Portugal</p>
                 </div>
               </div>
-              <a href="../src/mbway.html">
-                <button class="btn btn-button buy-button">Comprar</button>
+              <a href="#">
+                <button class="btn btn-button buy-button popup-open2">Comprar</button>
               </a>
             </div>
           </div>
@@ -319,7 +431,8 @@
         loading="lazy"
       ></iframe>
     </div>
-
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0."></script>
   </body>
 </html>
