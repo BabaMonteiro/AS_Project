@@ -141,12 +141,10 @@
       }
 
       function clearImages() {
-        document.getElementById("formFile").value = null;
+        document.getElementById("productImages").value = null;
         document.getElementById("imageContainer").innerHTML = "";
       }
     </script>
-
-    <script type="text/javascript" src="../src/scripts/navbar.js"></script>
   </head>
   <body>
     <!--Navbar-->
@@ -174,14 +172,15 @@
       </div>
     </header>
     <!---->
-    <div class="publish-main-div">
-      <br />
-      <h1>Publicar anúncio</h1>
 
-      <div class="publish-sec-div mt-3">
-        <h3>Informação acerca do vinil</h3>
+    <form class="was-validated">
+      <div class="publish-main-div">
+        <br />
+        <h1>Publicar anúncio</h1>
 
-        <form class="was-validated">
+        <div class="publish-sec-div mt-3">
+          <h3>Informação acerca do vinil</h3>
+
           <!-- Vinil Title -->
           <div class="mt-5 div-form w-50">
             <label for="vinilTitle" class="form-label"
@@ -191,6 +190,7 @@
               type="text"
               class="form-control"
               id="vinilTitle"
+              name="vinilTitle"
               value="To Pimp A Butterfly"
               required
             />
@@ -205,6 +205,7 @@
               type="text"
               class="form-control"
               id="artistName"
+              name="artistName"
               value="Kendrick Lamar"
               required
             />
@@ -218,65 +219,75 @@
               type="text"
               class="form-control"
               id="year"
+              name="year"
               value="2015"
               required
             />
           </div>
-        </form>
 
-        <!-- Classification -->
-        <div class="mt-4 div-form">
-          <label for="classification" class="form-label">Classificação</label>
-          <select class="form-select" id="classification" style="width: 155px">
-            <option></option>
-            <option>EP</option>
-            <option>LP</option>
-            <option>Single</option>
-          </select>
-        </div>
-
-        <!-- Condition -->
-        <div class="mt-4 div-form">
-          <label for="Condition" class="form-label">Condição *</label>
-          <br />
-          <div class="stars" id="Condition">
-            <input type="radio" id="star1" name="rating" value="1" required />
-            <label for="star1">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4">&#9733;</label>
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5">&#9733;</label>
-          </div>
-        </div>
-
-        <!-- Vinil Sample -->
-        <div class="mt-3 pb-2 div-form" style="width: 50%">
-          <div class="mb-3">
-            <label for="formFile" class="form-label"
-              >Áudio do vinil a tocar</label
+          <!-- Classification -->
+          <div class="mt-4 div-form">
+            <label for="classification" class="form-label">Classificação</label>
+            <select
+              class="form-select"
+              id="classification"
+              name="classification"
+              style="width: 155px"
             >
-            <input class="form-control" type="file" id="formFile" />
+              <option></option>
+              <option>EP</option>
+              <option>LP</option>
+              <option>Single</option>
+            </select>
+          </div>
+
+          <!-- Condition -->
+          <div class="mt-4 div-form">
+            <label for="Condition" class="form-label">Condição *</label>
+            <br />
+            <div class="stars" id="Condition">
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1">&#9733;</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2">&#9733;</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3">&#9733;</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4">&#9733;</label>
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5">&#9733;</label>
+            </div>
+          </div>
+
+          <!-- Vinil Sample -->
+          <div class="mt-3 pb-2 div-form" style="width: 50%">
+            <div class="mb-3">
+              <label for="audioSample" class="form-label"
+                >Áudio do vinil a tocar</label
+              >
+              <input
+                class="form-control"
+                type="file"
+                id="audioSample"
+                name="audioSample"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Product Images -->
-      <div class="publish-sec-div mt-3">
-        <h3>Imagens *</h3>
-        <form class="was-validated">
+        <!-- Product Images -->
+        <div class="publish-sec-div mt-3">
+          <h3>Imagens *</h3>
           <div class="div-form mt-3" style="width: 50%">
             <div class="mb-5">
-              <label for="Image" class="form-label"
+              <label for="productImages" class="form-label"
                 >A primeira imagem adicionada será a capa do anúncio</label
               >
               <input
                 class="form-control"
                 type="file"
-                id="formFile"
+                id="productImages"
+                name="productImages"
                 onchange="preview(event)"
                 multiple
                 required
@@ -294,21 +305,20 @@
             </div>
             <div id="imageContainer" class="row"></div>
           </div>
-        </form>
-      </div>
+        </div>
 
-      <!-- Description -->
-      <div class="publish-sec-div mt-3 pb-2">
-        <h3>Descrição *</h3>
-        <form class="was-validated">
+        <!-- Description -->
+        <div class="publish-sec-div mt-3 pb-2">
+          <h3>Descrição *</h3>
           <div class="div-form mt-3" style="width: 50%">
             <div class="mb-3">
-              <label for="validationTextarea" class="form-label"
+              <label for="description" class="form-label"
                 >Descrição sobre o produto</label
               >
               <textarea
                 class="form-control"
-                id="validationTextarea"
+                id="description"
+                name="description"
                 required
                 style="
                   background-color: var(--primary);
@@ -320,19 +330,19 @@ TPAB é um álbum que lida com o materialismo, o racismo, a opressão e, acima d
               >
             </div>
           </div>
-        </form>
-      </div>
+        </div>
 
-      <!-- Vinil Price -->
-      <div class="publish-sec-div mt-3 pb-2">
-        <h3>Preço *</h3>
-        <div class="div-form mt-3">
-          <form class="was-validated">
+        <!-- Vinil Price -->
+        <div class="publish-sec-div mt-3 pb-2">
+          <h3>Preço *</h3>
+          <div class="div-form mt-3">
             <div class="input-group mb-3" style="width: 130px">
               <input
                 type="text"
                 class="form-control"
                 style="border: none"
+                id="price"
+                name="price"
                 value="24.99"
               />
               <span
@@ -345,63 +355,59 @@ TPAB é um álbum que lida com o materialismo, o racismo, a opressão e, acima d
                 >€</span
               >
             </div>
-          </form>
-          <div class="input-group mb-3 w-75 d-flex align-items-center">
-            <label
-              class="form-check-label me-3 pb-1"
-              for="flexSwitchCheckDefault"
-              >Negociável</label
-            >
-            <div class="form-check form-switch">
-              <input
-                style="background-color: #c9abab !important"
-                class="form-check-input"
-                type="checkbox"
-                id="flexSwitchCheckDefault"
-              />
+            <div class="input-group mb-3 w-75 d-flex align-items-center">
+              <label
+                class="form-check-label me-3 pb-1"
+                for="flexSwitchCheckDefault"
+                >Negociável</label
+              >
+              <div class="form-check form-switch">
+                <input
+                  style="background-color: #c9abab !important"
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Location -->
-      <div class="publish-sec-div mt-3 pb-4">
-        <h3>Localização *</h3>
-        <form class="was-validated">
+        <!-- Location -->
+        <div class="publish-sec-div mt-3 pb-4">
+          <h3>Localização *</h3>
           <div class="mt-3 div-form w-50">
-            <label for="loacation" class="form-label"
+            <label for="location" class="form-label"
               >Morada/Ponto de Entrega *
             </label>
             <input
               type="text"
               class="form-control"
               id="location"
+              name="location"
               value="Av. Dr. Lourenço Peixinho 169, 3800-999 Aveiro"
               required
             />
           </div>
-        </form>
-      </div>
+        </div>
 
-      <!-- Contacts -->
-      <div class="publish-sec-div mt-3 pb-2">
-        <h3>Contactos *</h3>
-        <form class="was-validated">
+        <!-- Contacts -->
+        <div class="publish-sec-div mt-3 pb-2">
+          <h3>Contactos *</h3>
           <div class="mt-3 div-form" style="width: 210px">
-            <label for="validationTooltip01" class="form-label">Email </label>
+            <label for="email" class="form-label">Email </label>
             <input
               type="text"
               class="form-control"
-              id="validationTooltip01"
+              id="email"
+              name="email"
               value="bomvendedor@ua.pt"
               required
             />
           </div>
 
           <div class="mt-3 div-form" style="width: 210px">
-            <label for="validationServerUsername" class="form-label"
-              >Nº de telefone</label
-            >
+            <label for="phoneNumber" class="form-label">Nº de telefone</label>
             <div class="input-group mb-3">
               <span
                 class="input-group-text"
@@ -413,6 +419,8 @@ TPAB é um álbum que lida com o materialismo, o racismo, a opressão e, acima d
                 >+351</span
               >
               <input
+                id="phoneNumber"
+                name="phoneNumber"
                 type="text"
                 class="form-control"
                 style="border: none"
@@ -421,28 +429,28 @@ TPAB é um álbum que lida com o materialismo, o racismo, a opressão e, acima d
               />
             </div>
           </div>
-        </form>
-      </div>
+        </div>
 
-      <div class="publish-final-div mt-3 d-flex justify-content-end">
-        <div class="pt-2 pb-2" style="margin-right: 3%">
-          <button
-            type="button"
-            class="btn btn-link mt-2"
-            style="color: var(--primary)"
-          >
-            <a href="../src/pimp_butterfly.html"> Pré-visualizar </a>
-          </button>
-          <button
-            class="btn publish-btn"
-            type="submit"
-            style="width: 175px; height: 40"
-          >
-            Publicar anúncio
-          </button>
+        <div class="publish-final-div mt-3 d-flex justify-content-end">
+          <div class="pt-2 pb-2" style="margin-right: 3%">
+            <button
+              type="button"
+              class="btn btn-link mt-2"
+              style="color: var(--primary)"
+            >
+              <a href="../src/preview.html"> Pré-visualizar </a>
+            </button>
+            <button
+              class="btn publish-btn"
+              type="submit"
+              style="width: 175px; height: 40"
+            >
+              Publicar anúncio
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
     <!--Footer-->
     <section class="footer">
       <div class="social">
@@ -460,10 +468,29 @@ TPAB é um álbum que lida com o materialismo, o racismo, a opressão e, acima d
         reserved
       </p>
     </section>
+
+    <script>
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const obj = Object.fromEntries(fd);
+
+        console.log(obj);
+
+        const json = JSON.stringify(obj);
+        localStorage.setItem('form', json);
+
+        window.location.href = "preview.html";
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="../src/scripts/navbar.js"></script>
   </body>
 </html>
