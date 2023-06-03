@@ -90,38 +90,35 @@
         margin-bottom: 70px;
       }
 
-      .motivation{
-        background-color: var(--secondary);
-        margin-top: 180px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 50px; 
-        margin-right: 50px;
-        border-radius: 15px;
-        border: 5px solid var(--primary);
+      .rowabout {
+      margin: auto !important;
+      padding: 50px !important;
+      width: 70% !important;
+      margin-top: 10% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 15px !important;
+      border: 15px solid var(--primary) !important;
       }
 
-      .motivation > h1{
-        padding-top: 5px;
-        padding-bottom: 2px;
-        letter-spacing: 3px;
-      }
+     .title{
+      text-align: right;
+      font-size: 20px;
+      border: none;
+      border-right: 6px solid var(--secondary);
+      padding-right: 10px;
+     }
 
-      .motivation-text{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .motivation-text {
+      margin-left: 20px;
       }
 
       .motivation-text > li{
-        text-align: center;
+      text-align: left;
+      font-size: 17px;
       }
+
 
 
     </style>
@@ -147,15 +144,64 @@
     <!---->
 
     <script type="text/javascript" src="../src/scripts/navbar.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
   </head>
 
   <body class="oflw" style="overflow: auto; ">
+  <!--Pop-up-->
+
+  <div class="wrapper-popup">
+    <i class="fa-solid fa-x popup-close"></i>
+    <div class="container login-container">
+      <img
+        src="../assets/img/logo.png"
+        alt="Giro Disco Logo"
+        class="login-logo mt-1"
+      />
+      <div class="login-entrar mt-4 mb-4">
+        <h1 class="mb-1">Entrar</h1>
+        <p>Inicia sessão ou cria conta para começares a negociar</p>
+      </div>
+      <div class="form-floating mb-3 mx-auto login-form">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating mx-auto login-form">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+        />
+        <label for="floatingPassword">Senha</label>
+      </div>
+      <button type="button" class="btn btn-link mt-2 login-naoSabes">
+        Não sabes a senha?
+      </button>
+      <button class="btn login-btn mt-3">Entrar</button>
+      <div class="login-divider w-75 mt-1">
+        <span>ou</span>
+      </div>
+      <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
+    </div>
+  </div>
+
     <!--Navbar-->
     <header>
       <a href="../src/index.html"
         ><img class="logo" src="../assets/img/logo.png"
       /></a>
-      <ul class="navbar">
+      <ul class="navbar menu">
         <li><a href="#">Recomendações</a></li>
         <li><a href="../src/map.html">Mapa</a></li>
         <li><a href="../src/about.html">Acerca</a></li>
@@ -170,18 +216,28 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
-        <a href="#" class="user"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="#" class="user popup-open"><i class="fa-regular fa-circle-user"></i></a>
         <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
       </div>
     </header>
-    <div class = "motivation">
-      <h1>A nossa motivação</h1>
+    <div class="rowabout">
+      <div class="title">
+        <h1>A</h1>
+        <br>
+        <h1>NOSSA</h1>
+        <br>
+        <H1>MOTIVAÇÃO</H1>
+      </div>
       <div class="motivation-text">
-        <li>Bem-vindo ao Giró Disco, o nosso Marketplace Online de Vinil!</li> 
-        <li>Este projeto tem como objetivo reunir colecionadores e amantes da música, oferecendo uma ampla seleção de vinis.</li> 
-        <li>Queremos proporcionar uma experiência única de descoberta musical, conectando vendedores confiáveis ​​com compradores apaixonados. </li>
-        <li>Valorizamos autenticidade, qualidade e respeito pela música e pelos artistas e damos oportunidade e visibilidade aos pequenos negócios. </li>
-        <li>Obrigado por fazer parte desta comunidade de amantes de vinil, e já sabe, gire o disco, mas não toque o mesmo.</li></div>
+        <li>Bem-vindo ao <strong>GiróDisco</strong>, o nosso Marketplace Online de Vinil!</li> 
+        <br>
+        <li>Este projeto pretende reunir colecionadores e amantes da música, <strong>como tu!</strong></li> 
+        <li>Queremos proporcionar uma experiência única de descoberta musical, conectando vendedores confiáveis </li>
+        <li> ​​com compradores apaixonados. </li>
+        <li><strong>Obrigado</strong> por fazeres parte desta comunidade, e não te esqueças...</li>
+        <br>
+        <li style="font-size: 24px; color:var(--primary); background-color: var(--secondary); border-radius: 5px; text-align: center; padding: 4px;"><strong>GiróDisco, mas não toques o mesmo.</strong></li>
+      </div>
     </div>
     <!---->
     <div class="heading">
@@ -249,5 +305,13 @@
       </ul>
       <p class="copyright"><i class="fa-regular fa-copyright"></i> 2023 GiróDisco | All rights reserved</p>
   </section>
+
+
+  <script type="text/javascript" src="scripts/popup.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

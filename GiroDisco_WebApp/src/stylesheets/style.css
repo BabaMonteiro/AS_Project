@@ -18,7 +18,7 @@ Font Usage:
 body,html{
   font-family: "Open Sans", sans-serif !important;
   font-weight: 600 !important;
-  height: 130%; /*Temporário, mudar para 100% e resolver*/
+  height: 100%; /*Temporário, mudar para 100% e resolver*/
 }
 .oflw {
   overflow-y: hidden;
@@ -271,7 +271,7 @@ a.btn1:hover {
   margin-top: 120px;
   margin-right: 40px;
   min-height: 100%;
-  opacity: 0;
+
   transition: all 0.3s ease-in;
 }
 .panel-separator {
@@ -575,29 +575,29 @@ input[type="range"]::-moz-range-thumb {
 
 /* Login/SignUp Pop-up */
 .wrapper-popup{
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(50, 50, 50, 0.568);
-  padding-top: 15px;
-  position: fixed;
-  z-index: 9999;
-  bottom: 0px;
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: rgba(50, 50, 50, 0.568) !important;
+  padding-top: 15px !important;
+  position: fixed !important;
+  z-index: 9999 !important;
+  bottom: 0px !important;
   display: none;
   opacity: 0;
-  transition: all .5s linear;
+  transition: all .5s linear !important;
 }
 .popup-close{
   position: relative;
   float: right;
   color: var(--white);
-  top: 5px;
+  top: 15px;
   right: 15px;
   cursor: pointer;
 }
 .login-container {
-  border: 15px solid #f1d0d2;
-  background-color: var(--white);
-  border-radius: 25px;
+  border: 15px solid #f1d0d2 !important;
+  background-color: var(--white) !important;
+  border-radius: 25px !important;
   width: 40% !important;
   transition: all 0.5s linear;
 }
@@ -700,7 +700,10 @@ input[type="range"]::-moz-range-thumb {
   font-size: 15px !important;
   font-weight: bold;
 }
-
+.login-container input{
+  height: 50px !important;
+  padding-top: 15px !important;
+}
 
 .login-container label {
   color: var(--primary) !important;
@@ -711,6 +714,62 @@ input[type="range"]::-moz-range-thumb {
   display: block;
   margin: 0px auto;
   width: 40%;
+}
+/**/
+
+/* MBWay Pop-up */
+.wrapper-popup2{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.568);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  opacity: 0;
+  transition: all .5s linear;
+  bottom: 0;
+}
+.wrapper-popup2 .popup-close{
+  position: absolute;
+  float: right;
+  color: var(--white);
+  top:25px;
+  right: 25px;
+  cursor: pointer;
+}
+.wrapper-popup2 .mbway-container{
+  width: 40%;
+  margin: 0 auto;
+  background-color: var(--white);
+  /*border: 12px solid var(--secondary);*/
+  border-radius: 5px;
+  outline: 12px solid var(--secondary);
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s linear;
+}
+.wrapper-popup2 .mbway-container .mbway-logo{
+  width: 200px;
+}
+.wrapper-popup2 .mbway-container .texts{
+  margin-bottom: 20px;
+}
+.wrapper-popup2 .mbway-container .texts h1{
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.wrapper-popup2 .mbway-container .texts p{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 /**/
 
@@ -731,6 +790,7 @@ input[type="range"]::-moz-range-thumb {
     grid-gap: 5%;
     grid-row-gap: 30px;
   }
+
 }
 
 @media (max-width: 1090px) {
@@ -792,6 +852,32 @@ input[type="range"]::-moz-range-thumb {
   .login-container {
     width: 80% !important;
   }
+
+   /*Popup Mbway*/
+   .wrapper-popup2 .mbway-container{
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--white);
+    /*border: 12px solid var(--secondary);*/
+    border-radius: 5px;
+    outline: 12px solid var(--secondary);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s linear;
+  }
+  .wrapper-popup2 .mbway-container .mbway-logo{
+    width: 170px;
+  }
+  .wrapper-popup2 .mbway-container .texts h1{
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .wrapper-popup2 .mbway-container .texts p{
+    font-size: 18px;
+  }
 }
 @media (max-width: 860px) {
   /*Grid Display*/
@@ -804,7 +890,7 @@ input[type="range"]::-moz-range-thumb {
 
 .profile-img {
   display: flex;
-  width: 150px !important;
+  width: 120px !important;
   height: auto;
   border-radius: 50%;
   margin: auto !important;
