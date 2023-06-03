@@ -1,5 +1,5 @@
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+let menu = document.getElementById("menu-icon");
+let navbar = document.getElementsByClassName(".navbar");
 
 //Navbar scroll
 window.addEventListener("scroll", function () {
