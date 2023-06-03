@@ -809,7 +809,6 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   margin: auto !important;
   margin-top: 5% !important;
-  opacity: 75%;
 }
 
 .profile-img:hover {
@@ -846,6 +845,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex !important;
   margin: auto !important;
   margin-bottom: 5% !important;
+  margin-top: 5% !important;
   text-align: center !important;
   font-weight: bold !important;
   font-size: large !important;
