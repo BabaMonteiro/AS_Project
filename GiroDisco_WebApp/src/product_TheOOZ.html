@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Pimp A Butterfly</title>
+    <title>The OOZ</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
@@ -24,11 +24,8 @@
       }
 
       .row {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items:end;
-        margin-top: 5%;
+        margin-top: 10%;
+        margin-left: 1%;
       }
 
       .photo-slider {
@@ -43,45 +40,35 @@
         flex-direction: column;
         margin-right: 10px;
         padding-left: 30px;
-        width: 30%;
         height: 100%;
       }
+
       .photo-thumbnails > img {
+        margin-bottom: 10px;
         cursor: pointer;
         box-sizing: border-box;
-        width: 85%;
+        width: 200px;
         height: auto;
-        margin-top: 10px;
       }
 
       .photo-thumbnails :hover {
         border: 3px solid var(--primary);
       }
 
-      .photo-main{
-        flex-grow: 1; 
-        height: 100%;
-        width: 70%;
-      }
       .photo-main > img {
-        width: 100%;
+        width: 620px;
         height: auto;
         background-size: cover;
         background-position: center;
       }
 
       .product {
-        margin-right: 0px;
+        margin-right: 70px;
         height: 100%;
         display: flex;
         flex-direction: column;
       }
-      .right-column, .left-column{
-        width: 100% !important;
-      }
-      .right-column{
-        height: 80%;
-      }
+
       .rating {
         width: 200px;
         height: 40px;
@@ -100,6 +87,7 @@
         overflow: auto;
         display: flex;
         flex-direction: column;
+        width: 865px;
       }
 
       .product-info-text {
@@ -190,270 +178,11 @@
       .buy-button :hover {
         border: 3px solid var(--primary);
       }
-      @media (max-width: 1290px) {
-        .row{
-          margin-top: 0;
-        }
-      }
-      @media (max-width: 1090px) {
-      .photo-slider {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        position: relative;
-        left: 50px;
-      }
-
-      .photo-thumbnails {
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px;
-        padding-bottom: 5px;
-        height: 100%;
-      }
-      .photo-thumbnails > img {
-        cursor: pointer;
-        box-sizing: border-box;
-        margin-right: 10px;
-        height: auto;
-      }
-
-      .photo-thumbnails :hover {
-        border: 3px solid var(--primary);
-      }
-
-      .photo-main{
-        height: 100%;
-        width: 82%;
-      }
-      .photo-main > img {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-      }
-      }
-      /* .sample-player{
-        margin: 70px 20px;
-        background-color: #444142;
-        width: 100%;
-        height: 100px;
-    } */
     </style>
   </head>
 
   <body>
-      <!--Pop-up-->
-    
-      <div class="wrapper-popup">
-        <i class="fa-solid fa-x popup-close"></i>
-        <div id="login-container" class="container login-container">
-          <img
-            src="../assets/img/logo.png"
-            alt="Giro Disco Logo"
-            class="login-logo mt-1"
-          />
-          <div class="login-entrar mt-4 mb-4">
-            <h1 class="mb-1">Entrar</h1>
-            <p>Inicia sessão ou cria conta para começares a negociar</p>
-          </div>
-          <div class="form-floating mb-3 mx-auto login-form">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email</label>
-          </div>
-          <div class="form-floating mx-auto login-form">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Senha</label>
-          </div>
-          <button type="button" class="btn btn-link mt-2 login-naoSabes">
-            Não sabes a senha?
-          </button>
-          <button class="btn login-btn mt-3">Entrar</button>
-          <div class="login-divider w-75 mt-1">
-            <span>ou</span>
-          </div>
-          <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
-        </div>
-        <div id="register-container" class="container login-container custom-scroll">
-          <div class="custom-scroll">
-            <form class="was-validated">
-              <!-- Profile Picture -->
-              <img
-                src="../assets/img/miguel.jpeg"
-                alt="Miguel Ângelo"
-                class="profile-img"
-              />
-      
-              <!-- First Name -->
-              <div class="mx-auto login-form mt-4">
-                <label for="name" class="form-label">Nome </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  value="Miguel"
-                  required
-                />
-              </div>
-      
-              <!-- Last Name -->
-              <div class="mx-auto login-form mt-3">
-                <label for="lastName" class="form-label">Apelido </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  name="lastName"
-                  value="Ângelo"
-                  required
-                />
-              </div>
-      
-              <!-- Email -->
-              <div class="mx-auto login-form mt-3">
-                <label for="email" class="form-label">Email </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  value="miguel.ang@ua.pt"
-                  required
-                />
-              </div>
-      
-              <!-- Password -->
-              <div class="mx-auto login-form mt-3">
-                <label for="password" class="form-label">Senha </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="password"
-                  name="password"
-                  value="Miguelito#2"
-                  required
-                />
-              </div>
-      
-              <!-- Phone Number -->
-              <div class="mx-auto login-form mt-3">
-                <label for="phoneNumber" class="form-label">Contacto </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  value="912345678"
-                  required
-                />
-              </div>
-      
-              <!-- Address -->
-              <div class="mx-auto login-form mt-3">
-                <label for="address" class="form-label">Morada </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  name="address"
-                  value="Campus Universitário de Santiago"
-                  required
-                />
-              </div>
-      
-              <!-- Register Account -->
-              <button class="btn profile-edit-btn" onclick="store()">
-                Criar Conta
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--Popup mbway-->
-      <div id="wrapper-popup2" class="wrapper-popup2">
-        <i id="popup2-close"class="fa-solid fa-x popup-close"></i>
-        <div class="container mbway-container">
-            <img class="mbway-logo" src="../assets/img/mbway.png"/>
-            <div class="texts">
-                <h1>Efetuar pedido de pagamento</h1>
-                <p>Introduz o teu número de telefone para procederes</p>
-            </div>
-            <div class="form-floating mb-3 mx-auto login-form">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput" style="color: rgb(192, 192, 192);">Número de telefone</label>
-            </div>
-            <button class="btn login-btn mt-3">Comprar</button>
-        </div>
-      </div>
-        <!--User popup-->
-      <div class="wrapper-popup2" id="wrapper-popup3">
-          <i id="popup3-close"class="fa-solid fa-x popup-close"></i>
-          <div class="container login-container mt-5">
-              <!-- Profile Picture -->
-              <img
-                src="../assets/img/account.png"
-                alt="John Doe Profile Pic"
-                class="profile-img"
-              />
-              <!-- Profile Info -->
-              <div class="form-floating mx-auto login-form mt-4">
-                <input class="form-control" id="firstNameInput" placeholder="Nome" value="">
-                <label for="firstNameInput">Nome</label>
-              </div>
-              <div class="form-floating mx-auto login-form mt-2">
-                <input class="form-control" id="lastNameInput" placeholder="Apelido" value="">
-                <label for="lastNameInput">Apelido</label>
-              </div>
-              <div class="form-floating mx-auto login-form mt-2">
-                <input class="form-control" id="emailInput" placeholder="Email" />
-                <label for="emailInput">Email</label>
-              </div>
-              <div class="form-floating mx-auto login-form mt-2">
-                <input class="form-control" id="contactInput" placeholder="Contacto" />
-                <label for="contactInput">Contacto</label>
-              </div>
-              <div class="form-floating mx-auto login-form mt-2">
-                <input class="form-control" id="locationInput" placeholder="Localização" value="">
-                <label for="locationInput">Localização</label>
-              </div>
-              <!-- Profile Socials -->
-              <div class="profile-icon-container">
-                <div class="profile-icon">
-                  <i class="fa-brands fa-spotify"></i>
-                </div>
-                <div class="profile-icon">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="profile-icon">
-                  <i class="fa-brands fa-twitter"></i>
-                </div>
-                <div class="profile-icon">
-                  <i class="fa-brands fa-facebook"></i>
-                </div>
-              </div>
-              <!-- Edit Profile -->
-              <button class="btn profile-edit-btn mt-5">Editar</button>
-          </div>
-      </div>
-   
     <!--Pop-up-->
-
     <div class="wrapper-popup">
       <i class="fa-solid fa-x popup-close"></i>
       <div
@@ -589,7 +318,6 @@
         <button class="btn profile-edit-btn mt-5">Editar</button>
       </div>
     </div>
-
     <!--Navbar-->
     <header>
       <a href="../src/index.html"
@@ -619,31 +347,23 @@
     <!---->
 
     <div class="row">
-      <div class="col-md-6 left-column">
+      <div class="col-md-6">
         <div class="photo-slider">
           <div class="photo-thumbnails">
-            <img
-              src="../assets/img/To_Pimp_a_Butterfly_2.jpg"
-              class="thumbnail"
-            />
-            <img
-              src="../assets/img/To_Pimp_a_Butterfly_3.jpg"
-              class="thumbnail"
-            />
-            <img
-              src="../assets/img/To_Pimp_A_Butterfly_3.webp"
-              class="thumbnail"
-            />
+            <img src="../assets/img/theOOZ_2.webp" class="thumbnail" />
+            <img src="../assets/img/TheOOZ_3.jpg" class="thumbnail" />
+            <img src="../assets/img/TheOOZ_4.jpg" class="thumbnail" />
           </div>
           <div class="photo-main">
             <img
-              src="../assets/img/To_Pimp_a_Butterfly.jpg"
-              alt="To Pimp A Butterfly"
+              id="main-photo"
+              src="../assets/img/theOOZ.webp"
+              alt="The OOZ"
             />
           </div>
         </div>
       </div>
-      <div class="col-md-6 right-column">
+      <div class="col-md-6">
         <div class="product">
           <p
             style="
@@ -652,11 +372,11 @@
               color: #888888 !important;
             "
           >
-            Género / Hip-Hop
+            Género / Rock
           </p>
-          <h2>To Pimp A Butterfly</h2>
-          <p>Kendrick Lamar</p>
-          <p>2015</p>
+          <h2>The OOZ</h2>
+          <p>King Krule</p>
+          <p>2017</p>
 
           <div class="product-info">
             <div class="top">
@@ -666,22 +386,24 @@
                   <span class="star2">&#9733;</span>
                   <span class="star2">&#9733;</span>
                   <span class="star2">&#9733;</span>
-                  <span class="star2">&#9733;</span>
-                  <span class="star2">&#9733;</span>
                 </div>
               </div>
               <div class="product-price text-white">
                 <h5 class="text-white"><strong>Preço</strong></h5>
-                <h3 class="text-white"><strong>24.99€</strong></h3>
+                <h3 class="text-white"><strong>29.99€</strong></h3>
               </div>
             </div>
             <h5 class="text-white"><strong>Descrição</strong></h5>
             <p class="text-white" style="text-align: justify">
-              TPAB é um álbum que lida com o materialismo, o racismo, a opressão
-              e, acima de tudo, o amor próprio. O título do álbum, To Pimp a
-              Butterfly, embora seja uma referência inteligente ao livro "To
-              Kill a Mockingbird" de Harper Lee, também é uma metáfora para a
-              exploração literal de algo tão belo e livre como uma borboleta.
+              "The Ooz" é um álbum sombrio e introspectivo do músico Archy
+              Marshall, também conhecido como King Krule. Com suas paisagens
+              sonoras ásperas e melancólicas, o álbum mergulha em temas de
+              alienação urbana, lutas pessoais e decadência emocional. A voz
+              distintiva de Marshall, acompanhada por instrumentação jazzística
+              e uma produção assombrosa, cria uma atmosfera de melancolia e
+              inquietação. "The Ooz" é uma exploração crua e atmosférica da
+              condição humana, oferecendo uma experiência sonora cativante e
+              imersiva que permanece conosco muito além do último acorde.
             </p>
             <div class="sample">
               <h5 class="text-white"><strong>Sample</strong></h5>
@@ -689,7 +411,7 @@
             </div>
             <div class="seller">
               <div class="seller-info">
-                <a class="seller-link popup-open3" href="#">
+                <a href="#" class="popup-open3">
                   <img
                     src="../assets/img/Fantano.jpeg"
                     class="seller-picture"
@@ -710,12 +432,10 @@
         </div>
       </div>
     </div>
-
-
     <div style="display: flex; margin-top: 30px">
       <iframe
         style="border-radius: 12px; margin: auto"
-        src="https://open.spotify.com/embed/album/7ycBtnsMtyVbbwTfJwRjSP?utm_source=generator"
+        src="https://open.spotify.com/embed/album/7D0onfXwlFnOvm1gF3nEdw?utm_source=generator&theme=0"
         width="94%"
         height="152"
         frameborder="0"
@@ -725,8 +445,13 @@
       ></iframe>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0."></script>
-    <script type="text/javascript" src="scripts/popup.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./scripts/product_page.js"></script>
+    <script type="text/javascript" src="./scripts/popup.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
