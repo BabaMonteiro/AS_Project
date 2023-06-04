@@ -9,176 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../src/stylesheets/style.css" />
+    <link rel="stylesheet" href="../src/stylesheets/product.css" />
     <script
       src="https://kit.fontawesome.com/a3d29aa1b6.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      a {
-        text-decoration: none;
-      }
-
-      p,
-      h2 {
-        color: var(--primary);
-      }
-
-      .row {
-        margin-top: 10%;
-        margin-left: 1%;
-      }
-
-      .photo-slider {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-      }
-
-      .photo-thumbnails {
-        display: flex;
-        flex-direction: column;
-        margin-right: 10px;
-        padding-left: 30px;
-        height: 100%;
-      }
-
-      .photo-thumbnails > img {
-        margin-bottom: 10px;
-        cursor: pointer;
-        box-sizing: border-box;
-        width: 200px;
-        height: auto;
-      }
-
-      .photo-thumbnails :hover {
-        border: 3px solid var(--primary);
-      }
-
-      .photo-main > img {
-        width: 620px;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-      }
-
-      .product {
-        margin-right: 70px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .rating {
-        width: 200px;
-        height: 40px;
-      }
-
-      .star {
-        height: 100%;
-        font-size: 30px;
-        width: calc(100% / 5);
-      }
-      .product-info {
-        border-radius: 10px;
-        margin-top: 10px;
-        background-color: var(--primary);
-        padding: 20px;
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-        width: 865px;
-      }
-
-      .product-info-text {
-        margin-left: 10px;
-      }
-
-      .top {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .product-condition {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-      }
-
-      .star2 {
-        color: #f1d0d2;
-        font-size: 20px;
-      }
-
-      .product-price {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .sample {
-        display: flex;
-        align-items: center;
-      }
-
-      .sample > img {
-        margin-left: 10px;
-        width: 20px;
-        height: auto;
-        cursor: pointer;
-        padding-bottom: 3px;
-      }
-
-      .seller {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
-
-      .seller-info {
-        display: flex;
-        align-items: center;
-      }
-
-      .seller-picture {
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-        margin-right: 10px;
-      }
-
-      .seller-details {
-        display: block;
-        align-items: center;
-        text-align: left;
-        margin: auto;
-        margin-left: 20px;
-      }
-
-      .seller-name {
-        font-weight: bold;
-        color: white !important;
-      }
-
-      .seller-location {
-        color: white !important;
-      }
-
-      .buy-button {
-        color: var(--primary);
-        font-weight: bolder;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 200px;
-        height: 57px;
-        background-color: var(--secondary);
-      }
-
-      .buy-button :hover {
-        border: 3px solid var(--primary);
-      }
-    </style>
   </head>
 
   <body>
@@ -347,7 +182,7 @@
     <!---->
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 left-column">
         <div class="photo-slider">
           <div class="photo-thumbnails">
             <img src="../assets/img/theOOZ_2.webp" class="thumbnail" />
@@ -363,7 +198,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 right-column">
         <div class="product">
           <p
             style="
@@ -444,7 +279,23 @@
         loading="lazy"
       ></iframe>
     </div>
-
+    <!--Footer-->
+    <section class="footer">
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <ul class="footer-list">
+        <li><a class="footer-nav" href="#">Recomendações</a></li>
+        <li><a class="footer-nav" href="#">Mapa</a></li>
+        <li><a class="footer-nav" href="#">Acerca</a></li>
+        <li><a href="#" class="btn1">Anunciar</a></li>
+      </ul>
+      <p class="copyright">
+        <i class="fa-regular fa-copyright"></i> 2023 GiróDisco | All rights
+        reserved
+      </p>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
