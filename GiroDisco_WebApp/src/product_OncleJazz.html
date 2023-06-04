@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Pimp A Butterfly</title>
+    <title>Oncle Jazz</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
@@ -25,6 +25,7 @@
 
       .row {
         margin-top: 10%;
+        margin-left: 1%;
       }
 
       .photo-slider {
@@ -54,9 +55,6 @@
         border: 3px solid var(--primary);
       }
 
-      .photo-main {
-        flex-grow: 1;
-      }
       .photo-main > img {
         width: 620px;
         height: auto;
@@ -65,7 +63,7 @@
       }
 
       .product {
-        margin-right: 10px;
+        margin-right: 70px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -89,7 +87,7 @@
         overflow: auto;
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 865px;
       }
 
       .product-info-text {
@@ -180,19 +178,11 @@
       .buy-button :hover {
         border: 3px solid var(--primary);
       }
-
-      /* .sample-player{
-        margin: 70px 20px;
-        background-color: #444142;
-        width: 100%;
-        height: 100px;
-    } */
     </style>
   </head>
 
   <body>
     <!--Pop-up-->
-
     <div class="wrapper-popup">
       <i class="fa-solid fa-x popup-close"></i>
       <div
@@ -328,7 +318,6 @@
         <button class="btn profile-edit-btn mt-5">Editar</button>
       </div>
     </div>
-
     <!--Navbar-->
     <header>
       <a href="../src/index.html"
@@ -361,23 +350,15 @@
       <div class="col-md-6">
         <div class="photo-slider">
           <div class="photo-thumbnails">
-            <img
-              src="../assets/img/To_Pimp_a_Butterfly_2.jpg"
-              class="thumbnail"
-            />
-            <img
-              src="../assets/img/To_Pimp_a_Butterfly_3.jpg"
-              class="thumbnail"
-            />
-            <img
-              src="../assets/img/To_Pimp_A_Butterfly_3.webp"
-              class="thumbnail"
-            />
+            <img src="../assets/img/oncle_jazz_2.webp" class="thumbnail" />
+            <img src="../assets/img/oncle_jazz_3.webp" class="thumbnail" />
+            <img src="../assets/img/oncle_jazz_4.jpg" class="thumbnail" />
           </div>
           <div class="photo-main">
             <img
-              src="../assets/img/To_Pimp_a_Butterfly.jpg"
-              alt="To Pimp A Butterfly"
+              id="main-photo"
+              src="../assets/img/oncle_jazz.jpeg"
+              alt="Oncle Jazz"
             />
           </div>
         </div>
@@ -391,11 +372,11 @@
               color: #888888 !important;
             "
           >
-            Género / Hip-Hop
+            Género / Pop
           </p>
-          <h2>To Pimp A Butterfly</h2>
-          <p>Kendrick Lamar</p>
-          <p>2015</p>
+          <h2>Oncle Jazz</h2>
+          <p>Men I Trust</p>
+          <p>2019</p>
 
           <div class="product-info">
             <div class="top">
@@ -406,21 +387,23 @@
                   <span class="star2">&#9733;</span>
                   <span class="star2">&#9733;</span>
                   <span class="star2">&#9733;</span>
-                  <span class="star2">&#9733;</span>
                 </div>
               </div>
               <div class="product-price text-white">
                 <h5 class="text-white"><strong>Preço</strong></h5>
-                <h3 class="text-white"><strong>24.99€</strong></h3>
+                <h3 class="text-white"><strong>19.99€</strong></h3>
               </div>
             </div>
             <h5 class="text-white"><strong>Descrição</strong></h5>
             <p class="text-white" style="text-align: justify">
-              TPAB é um álbum que lida com o materialismo, o racismo, a opressão
-              e, acima de tudo, o amor próprio. O título do álbum, To Pimp a
-              Butterfly, embora seja uma referência inteligente ao livro "To
-              Kill a Mockingbird" de Harper Lee, também é uma metáfora para a
-              exploração literal de algo tão belo e livre como uma borboleta.
+              "Oncle Jazz" é um álbum único e eclético da banda de música
+              eletrônica Men I Trust. Com uma mistura de batidas suaves,
+              melodias cativantes e vocais serenos, o álbum cria uma atmosfera
+              relaxante e envolvente. As faixas flutuam entre elementos de dream
+              pop, R&B e música eletrônica, criando uma experiência sonora
+              distintiva. "Oncle Jazz" é um convite para uma jornada musical
+              descontraída, com uma fusão harmoniosa de ritmos e arranjos que
+              fazem jus ao seu título intrigante.
             </p>
             <div class="sample">
               <h5 class="text-white"><strong>Sample</strong></h5>
@@ -428,7 +411,7 @@
             </div>
             <div class="seller">
               <div class="seller-info">
-                <a class="seller-link popup-open3" href="#">
+                <a href="#" class="popup-open3">
                   <img
                     src="../assets/img/Fantano.jpeg"
                     class="seller-picture"
@@ -452,7 +435,7 @@
     <div style="display: flex; margin-top: 30px">
       <iframe
         style="border-radius: 12px; margin: auto"
-        src="https://open.spotify.com/embed/album/7ycBtnsMtyVbbwTfJwRjSP?utm_source=generator"
+        src="https://open.spotify.com/embed/album/4W4gNYa4tt3t8V6FmONWEK?utm_source=generator&theme=0"
         width="94%"
         height="152"
         frameborder="0"
@@ -462,8 +445,13 @@
       ></iframe>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0."></script>
-    <script type="text/javascript" src="scripts/popup.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./scripts/product_page.js"></script>
+    <script type="text/javascript" src="./scripts/popup.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
