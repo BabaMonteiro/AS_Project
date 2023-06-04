@@ -75,6 +75,19 @@
           />
         </div>
 
+        <!-- Password -->
+        <div class="mx-auto login-form mt-3">
+          <label for="password" class="form-label">Senha </label>
+          <input
+            type="text"
+            class="form-control"
+            id="password"
+            name="password"
+            value="Miguelito#2"
+            required
+          />
+        </div>
+
         <!-- Phone Number -->
         <div class="mx-auto login-form mt-3">
           <label for="phoneNumber" class="form-label">Contacto </label>
@@ -113,6 +126,7 @@
         var name = document.getElementById("name").value;
         var lastName = document.getElementById("lastName").value;
         var email = document.getElementById("email").value;
+        var pw = document.getElementById("password").value;
         var phoneNumber = document.getElementById("phoneNumber").value;
         var address = document.getElementById("address").value;
 
@@ -120,6 +134,7 @@
           name: name,
           lastName: lastName,
           email: email,
+          pw: pw,
           phoneNumber: phoneNumber,
           address: address,
         };
