@@ -2,6 +2,9 @@
 let wrapper = document.querySelector('.wrapper-popup');
 let openBtn = document.querySelector('.popup-open');
 let closeBtn = document.querySelector('.popup-close');
+let loginCnt = document.querySelector('#login-container');
+let registerCnt = document.querySelector('#register-container');
+let registerBtn = document.querySelector('.signup-btn');
 
 openBtn.onclick = () => {
     wrapper.style.display = "block";
@@ -9,7 +12,16 @@ openBtn.onclick = () => {
 }
 closeBtn.onclick = () => {
     wrapper.style.opacity = "0";
-    setTimeout(function() { wrapper.style.display = "none";}, 550);
+    setTimeout(function() { wrapper.style.display = "none";
+    loginCnt.style.display = "block";
+    registerCnt.style.display = "none";
+    }, 550);
+}
+
+//Register Swap
+registerBtn.onclick = () => {
+    loginCnt.style.display = "none";
+    registerCnt.style.display = "flex";
 }
 //
 //Mbway Pop-up
