@@ -123,23 +123,11 @@
 
     <script>
       function store() {
-        var name = document.getElementById("name").value;
-        var lastName = document.getElementById("lastName").value;
-        var email = document.getElementById("email").value;
-        var pw = document.getElementById("password").value;
-        var phoneNumber = document.getElementById("phoneNumber").value;
-        var address = document.getElementById("address").value;
+        const form = document.querySelector("form");
+        const fd = new FormData(form);
+        const obj = Object.fromEntries(fd);
 
-        var userProfile = {
-          name: name,
-          lastName: lastName,
-          email: email,
-          pw: pw,
-          phoneNumber: phoneNumber,
-          address: address,
-        };
-
-        localStorage.setItem("userProfile", JSON.stringify(userProfile));
+        localStorage.setItem("userProfile", JSON.stringify(obj));
       }
     </script>
 
