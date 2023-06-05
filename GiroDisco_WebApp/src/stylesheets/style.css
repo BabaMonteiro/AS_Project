@@ -14,11 +14,13 @@ Font Usage:
   text-decoration: none;
   list-style: none;
 }
-ol, ul{
+ol,
+ul {
   padding-left: 0px !important;
 }
 /*Typography*/
-body,html{
+body,
+html {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 600 !important;
   height: 100% !important;
@@ -144,20 +146,19 @@ a.btn1:hover {
 
 /**/
 
-
 /*Footer*/
-.footer{
+.footer {
   padding: 30px 0 !important;
   background-color: var(--primary) !important;
   margin-top: 50px;
   position: relative;
 }
-.footer .social{
-    text-align: center !important;
-    padding-bottom: 15px !important;
-    color: var(--white) !important;
+.footer .social {
+  text-align: center !important;
+  padding-bottom: 15px !important;
+  color: var(--white) !important;
 }
-.footer .social a{
+.footer .social a {
   font-size: 24px !important;
   color: inherit !important;
   line-height: 38px !important;
@@ -167,11 +168,12 @@ a.btn1:hover {
   margin: 0 8px !important;
   padding: 2px 8px !important;
 }
-.footer .social a:hover, .footer-nav:hover{
+.footer .social a:hover,
+.footer-nav:hover {
   color: var(--secondary) !important;
-  transition: all .15s ease !important;
+  transition: all 0.15s ease !important;
 }
-.footer ul{
+.footer ul {
   margin-top: 0 !important;
   padding: 0 !important;
   list-style: none !important;
@@ -180,32 +182,32 @@ a.btn1:hover {
   margin-bottom: 0 !important;
   text-align: center !important;
 }
-.footer ul li a{
+.footer ul li a {
   color: inherit !important;
   text-decoration: none !important;
   color: var(--white) !important;
 }
-.footer ul li{
+.footer ul li {
   display: inline-block !important;
   padding: 0 15px !important;
 }
-.footer ul li a:hover{
+.footer ul li a:hover {
   opacity: 1 !important;
 }
-.footer .copyright{
+.footer .copyright {
   margin-top: 25px !important;
   text-align: center !important;
   font-size: 13px !important;
   color: var(--white) !important;
   opacity: 0.75 !important;
 }
-.footer .copyright i{
+.footer .copyright i {
   font-size: 13px !important;
 }
-.footer ul .btn1{
+.footer ul .btn1 {
   background-color: transparent !important;
 }
-.footer ul .btn1:hover{
+.footer ul .btn1:hover {
   background-color: var(--secondary) !important;
 }
 /**/
@@ -372,6 +374,8 @@ a.btn1:hover {
   background-color: var(--white);
   margin: 5px 0;
   border-radius: 10px;
+  position: relative;
+  z-index: 5;
 }
 .drpdown-filter {
   position: absolute;
@@ -578,7 +582,7 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   bottom: 5px;
 }
-.product-redirect{
+.product-redirect {
   position: absolute;
   width: 28%;
   height: 40%;
@@ -587,7 +591,7 @@ input[type="range"]::-moz-range-thumb {
 /**/
 
 /* Login/SignUp Pop-up */
-.wrapper-popup{
+.wrapper-popup {
   width: 100% !important;
   height: 100vh !important;
   background-color: rgba(50, 50, 50, 0.568) !important;
@@ -597,9 +601,9 @@ input[type="range"]::-moz-range-thumb {
   bottom: 0px !important;
   display: none;
   opacity: 0;
-  transition: all .5s linear !important;
+  transition: all 0.5s linear !important;
 }
-.popup-close{
+.popup-close {
   position: relative;
   float: right;
   color: var(--white);
@@ -614,7 +618,6 @@ input[type="range"]::-moz-range-thumb {
   width: 40% !important;
   transition: all 0.5s linear;
 }
-
 
 .login-entrar {
   text-align: left !important;
@@ -631,11 +634,11 @@ input[type="range"]::-moz-range-thumb {
 .login-naoSabes:hover {
   opacity: 70%;
 }
-.form-control{
+.form-control {
   padding: 5px 10px !important;
   height: 40px !important;
 }
-.form-floating>label{
+.form-floating > label {
   padding: 7px 15px !important;
 }
 .login-btn,
@@ -713,7 +716,7 @@ input[type="range"]::-moz-range-thumb {
   font-size: 15px !important;
   font-weight: bold;
 }
-.login-container input{
+.login-container input {
   height: 50px !important;
   padding-top: 15px !important;
 }
@@ -729,7 +732,7 @@ input[type="range"]::-moz-range-thumb {
   width: 40%;
 }
 /*Register*/
-#register-container{
+#register-container {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -737,29 +740,28 @@ input[type="range"]::-moz-range-thumb {
   height: 98%;
   padding: 0 !important;
 }
-.custom-scroll{
+.custom-scroll {
   width: 95%;
   height: 100%;
-  overflow-y: scroll; 
+  overflow-y: scroll;
   margin-right: 0;
 }
-.custom-scroll::-webkit-scrollbar{
+.custom-scroll::-webkit-scrollbar {
   width: 13px;
 }
-.custom-scroll::-webkit-scrollbar-track{
+.custom-scroll::-webkit-scrollbar-track {
   background-color: transparent;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  
 }
-.custom-scroll::-webkit-scrollbar-thumb{
+.custom-scroll::-webkit-scrollbar-thumb {
   background-color: rgba(50, 50, 50, 0.642);
   border-radius: 10px;
 }
 /**/
 
 /* MBWay Pop-up */
-.wrapper-popup2{
+.wrapper-popup2 {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -770,18 +772,18 @@ input[type="range"]::-moz-range-thumb {
   justify-content: center;
   display: none;
   opacity: 0;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   bottom: 0;
 }
-.wrapper-popup2 .popup-close{
+.wrapper-popup2 .popup-close {
   position: absolute;
   float: right;
   color: var(--white);
-  top:25px;
+  top: 25px;
   right: 25px;
   cursor: pointer;
 }
-.wrapper-popup2 .mbway-container{
+.wrapper-popup2 .mbway-container {
   width: 40%;
   margin: 0 auto;
   background-color: var(--white);
@@ -793,26 +795,26 @@ input[type="range"]::-moz-range-thumb {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
-.wrapper-popup2 .mbway-container .mbway-logo{
+.wrapper-popup2 .mbway-container .mbway-logo {
   width: 200px;
 }
-.wrapper-popup2 .mbway-container .texts{
+.wrapper-popup2 .mbway-container .texts {
   margin-bottom: 20px;
 }
-.wrapper-popup2 .mbway-container .texts h1{
+.wrapper-popup2 .mbway-container .texts h1 {
   font-size: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-top: 70px;
   margin-bottom: 0;
 }
-.wrapper-popup2 .mbway-container .texts p{
+.wrapper-popup2 .mbway-container .texts p {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-#register-containerComplete{
+#register-containerComplete {
   display: none;
 }
 /**/
@@ -834,7 +836,7 @@ input[type="range"]::-moz-range-thumb {
     grid-gap: 5%;
     grid-row-gap: 30px;
   }
-  .product-redirect{
+  .product-redirect {
     position: absolute;
     width: 40%;
     height: 27%;
@@ -901,8 +903,8 @@ input[type="range"]::-moz-range-thumb {
     width: 80% !important;
   }
 
-   /*Popup Mbway*/
-   .wrapper-popup2 .mbway-container{
+  /*Popup Mbway*/
+  .wrapper-popup2 .mbway-container {
     width: 60%;
     margin: 0 auto;
     background-color: var(--white);
@@ -914,16 +916,16 @@ input[type="range"]::-moz-range-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all .5s linear;
+    transition: all 0.5s linear;
   }
-  .wrapper-popup2 .mbway-container .mbway-logo{
+  .wrapper-popup2 .mbway-container .mbway-logo {
     width: 170px;
   }
-  .wrapper-popup2 .mbway-container .texts h1{
+  .wrapper-popup2 .mbway-container .texts h1 {
     font-size: 24px;
     margin-top: 40px;
   }
-  .wrapper-popup2 .mbway-container .texts p{
+  .wrapper-popup2 .mbway-container .texts p {
     font-size: 18px;
   }
 }
@@ -990,5 +992,3 @@ input[type="range"]::-moz-range-thumb {
 .profile-edit-btn:hover {
   opacity: 70%;
 }
-
-
