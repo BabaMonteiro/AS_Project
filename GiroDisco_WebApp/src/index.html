@@ -169,7 +169,10 @@
         </div>
         <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
       </div>
-      <div id="register-container" class="container login-container custom-scroll">
+      <div
+        id="register-container"
+        class="container login-container custom-scroll"
+      >
         <div class="custom-scroll">
           <form class="was-validated">
             <!-- Profile Picture -->
@@ -178,7 +181,7 @@
               alt="Miguel Ângelo"
               class="profile-img"
             />
-    
+
             <!-- First Name -->
             <div class="mx-auto login-form mt-4">
               <label for="name" class="form-label">Nome </label>
@@ -191,7 +194,7 @@
                 required
               />
             </div>
-    
+
             <!-- Last Name -->
             <div class="mx-auto login-form mt-3">
               <label for="lastName" class="form-label">Apelido </label>
@@ -204,7 +207,7 @@
                 required
               />
             </div>
-    
+
             <!-- Email -->
             <div class="mx-auto login-form mt-3">
               <label for="email" class="form-label">Email </label>
@@ -217,7 +220,7 @@
                 required
               />
             </div>
-    
+
             <!-- Password -->
             <div class="mx-auto login-form mt-3">
               <label for="password" class="form-label">Senha </label>
@@ -230,7 +233,7 @@
                 required
               />
             </div>
-    
+
             <!-- Phone Number -->
             <div class="mx-auto login-form mt-3">
               <label for="phoneNumber" class="form-label">Contacto </label>
@@ -243,7 +246,7 @@
                 required
               />
             </div>
-    
+
             <!-- Address -->
             <div class="mx-auto login-form mt-3">
               <label for="address" class="form-label">Morada </label>
@@ -256,7 +259,7 @@
                 required
               />
             </div>
-    
+
             <!-- Register Account -->
             <button class="btn profile-edit-btn" onclick="store()">
               Criar Conta
@@ -432,7 +435,7 @@
         <div class="drpdown drpdown-filter">
           <div class="select">
             <span class="selected">Melhor condição</span>
-            <div class="caret"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="caret" style="margin-right: 20%;"><i class="fa-solid fa-angle-down"></i></div>
           </div>
           <ul class="drpdown-menu">
             <li class="active">Melhor condição</li>
@@ -602,10 +605,6 @@
 
           <div id="album"></div>
         </div>
-        <div class="favs">
-          <h1 style="text-decoration: underline">Favourites</h1>
-          <div id="favorites-list"></div>
-        </div>
       </div>
     </div>
 
@@ -630,7 +629,6 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/home.js"></script>
     <script type="text/javascript" src="scripts/popup.js"></script>
-    <script src="./scripts/favs.js"></script>
 
     <script>
       const json = localStorage.getItem("publishProduct");
@@ -647,7 +645,9 @@
             <i class="fa-regular fa-heart product-fav"></i>
           </div>
           <ul class="product-infoL">
-            <li class="product-title">${obj["vinilTitle"]}</li>
+            <a href="./preview.html">
+              <li class="product-title">${obj["vinilTitle"]}</li>
+            </a>
             <li>${obj["artistName"]}</li>
             <li>${obj["year"]}</li>
           </ul>
