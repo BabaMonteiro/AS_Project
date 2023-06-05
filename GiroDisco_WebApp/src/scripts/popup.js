@@ -4,7 +4,9 @@ let openBtn = document.querySelector('.popup-open');
 let closeBtn = document.querySelector('.popup-close');
 let loginCnt = document.querySelector('#login-container');
 let registerCnt = document.querySelector('#register-container');
+let registerCmplt = document.querySelector('#register-containerComplete');
 let registerBtn = document.querySelector('.signup-btn');
+let createBtn = document.querySelector('.create-btn');
 
 openBtn.onclick = () => {
     wrapper.style.display = "block";
@@ -12,9 +14,22 @@ openBtn.onclick = () => {
 }
 closeBtn.onclick = () => {
     wrapper.style.opacity = "0";
+    if(registerCmplt.style.display == "block"){
+        setTimeout(function() { wrapper.style.display = "none";}, 550);
+    }
+    else{
+        setTimeout(function() { wrapper.style.display = "none";
+        loginCnt.style.display = "block";
+        registerCnt.style.display = "none";
+        }, 550);
+    }
+}
+createBtn.onclick = () => {
+    wrapper.style.opacity = "0";
     setTimeout(function() { wrapper.style.display = "none";
-    loginCnt.style.display = "block";
+    loginCnt.style.display = "none";
     registerCnt.style.display = "none";
+    registerCmplt.style.display = "block";
     }, 550);
 }
 

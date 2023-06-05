@@ -20,10 +20,7 @@
     <!--Pop-up-->
     <div class="wrapper-popup">
       <i class="fa-solid fa-x popup-close"></i>
-      <div
-        class="container login-container"
-        style="padding: 20px; margin-top: 5px"
-      >
+      <div id="login-container" class="container login-container">
         <img
           src="../assets/img/logo.png"
           alt="Giro Disco Logo"
@@ -60,7 +57,184 @@
         </div>
         <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
       </div>
+      <div
+        id="register-container"
+        class="container login-container custom-scroll"
+      >
+        <div class="custom-scroll">
+          <form class="was-validated">
+            <!-- Profile Picture -->
+            <img
+              src="../assets/img/miguel.jpeg"
+              alt="Miguel Ângelo"
+              class="profile-img"
+            />
+
+            <!-- First Name -->
+            <div class="mx-auto login-form mt-4">
+              <label for="name" class="form-label">Nome </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                value="Miguel"
+                required
+              />
+            </div>
+
+            <!-- Last Name -->
+            <div class="mx-auto login-form mt-3">
+              <label for="lastName" class="form-label">Apelido </label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+                value="Ângelo"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mx-auto login-form mt-3">
+              <label for="email" class="form-label">Email </label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                value="miguel.ang@ua.pt"
+                required
+              />
+            </div>
+
+            <!-- Password -->
+            <div class="mx-auto login-form mt-3">
+              <label for="password" class="form-label">Senha </label>
+              <input
+                type="text"
+                class="form-control"
+                id="password"
+                name="password"
+                value="Miguelito#2"
+                required
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mx-auto login-form mt-3">
+              <label for="phoneNumber" class="form-label">Contacto </label>
+              <input
+                type="text"
+                class="form-control"
+                id="phoneNumber"
+                name="phoneNumber"
+                value="912345678"
+                required
+              />
+            </div>
+
+            <!-- Address -->
+            <div class="mx-auto login-form mt-3">
+              <label for="address" class="form-label">Morada </label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                name="address"
+                value="Campus Universitário de Santiago"
+                required
+              />
+            </div>
+
+            <!-- Register Account -->
+            <button class="btn profile-edit-btn create-btn" onclick="store()">
+              Criar Conta
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        id="register-containerComplete"
+        class="container login-container custom-scroll"
+        style="overflow-y: scroll; height: 100%;"
+      >
+        <div class="custom-scroll">
+          <!-- Profile Picture -->
+          <img
+            src="../assets/img/miguel.jpeg"
+            alt="Miguel Ângelo"
+            class="profile-img"
+          />
+
+          <!-- First Name -->
+          <div class="mx-auto login-form mt-4">
+            <label for="name" class="form-label">Nome </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="name"
+              value="Miguel Ângelo"
+              disabled
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mx-auto login-form mt-3">
+            <label for="email" class="form-label">Email </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="email"
+              value="miguel.ang@ua.pt"
+              disabled
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mx-auto login-form mt-3">
+            <label for="phoneNumber" class="form-label">Contacto </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="phoneNumber"
+              value="912345678"
+              disabled
+            />
+          </div>
+
+          <!-- Address -->
+          <div class="mx-auto login-form mt-3 mb-5">
+            <label for="address" class="form-label">Morada </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="address"
+              value="Campus Universitário de Santiago, Aveiro"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
     <!--Popup mbway-->
     <div id="wrapper-popup2" class="wrapper-popup2">
       <i id="popup2-close" class="fa-solid fa-x popup-close"></i>

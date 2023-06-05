@@ -806,6 +806,9 @@ input[type="range"]::-moz-range-thumb {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
+#register-containerComplete{
+  display: none;
+}
 /**/
 
 @media (max-width: 1280px) {

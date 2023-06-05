@@ -261,10 +261,88 @@
             </div>
 
             <!-- Register Account -->
-            <button class="btn profile-edit-btn" onclick="store()">
+            <button class="btn profile-edit-btn create-btn" onclick="store()">
               Criar Conta
             </button>
           </form>
+        </div>
+      </div>
+      <div
+        id="register-containerComplete"
+        class="container login-container custom-scroll"
+        style="overflow-y: scroll; height: 100%;"
+      >
+        <div class="custom-scroll">
+          <!-- Profile Picture -->
+          <img
+            src="../assets/img/miguel.jpeg"
+            alt="Miguel Ângelo"
+            class="profile-img"
+          />
+
+          <!-- First Name -->
+          <div class="mx-auto login-form mt-4">
+            <label for="name" class="form-label">Nome </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="name"
+              value="Miguel Ângelo"
+              disabled
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mx-auto login-form mt-3">
+            <label for="email" class="form-label">Email </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="email"
+              value="miguel.ang@ua.pt"
+              disabled
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mx-auto login-form mt-3">
+            <label for="phoneNumber" class="form-label">Contacto </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="phoneNumber"
+              value="912345678"
+              disabled
+            />
+          </div>
+
+          <!-- Address -->
+          <div class="mx-auto login-form mt-3 mb-5">
+            <label for="address" class="form-label">Morada </label>
+            <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
+              type="text"
+              class="form-control"
+              id="address"
+              value="Campus Universitário de Santiago, Aveiro"
+              disabled
+            />
+          </div>
         </div>
       </div>
     </div>
