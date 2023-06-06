@@ -41,7 +41,6 @@
         flex-wrap: wrap;
         margin-bottom: 100px;
         margin-top: 0px;
-
       }
 
       .team .conteudo {
@@ -91,36 +90,33 @@
       }
 
       .rowabout {
-      margin: auto !important;
-      padding: 50px !important;
-      width: 70% !important;
-      margin-top: 10% !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      border-radius: 15px !important;
-      border: 15px solid var(--primary) !important;
+        margin: auto !important;
+        padding: 50px !important;
+        width: 70% !important;
+        margin-top: 10% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 15px !important;
+        border: 15px solid var(--primary) !important;
       }
 
-     .title{
-      text-align: right;
-      font-size: 20px;
-      border: none;
-      border-right: 6px solid var(--secondary);
-      padding-right: 10px;
-     }
+      .title {
+        text-align: right;
+        font-size: 20px;
+        border: none;
+        border-right: 6px solid var(--secondary);
+        padding-right: 10px;
+      }
 
       .motivation-text {
-      margin-left: 20px;
+        margin-left: 20px;
       }
 
-      .motivation-text > li{
-      text-align: left;
-      font-size: 17px;
+      .motivation-text > li {
+        text-align: left;
+        font-size: 17px;
       }
-
-
-
     </style>
 
     <link rel="stylesheet" href="../src/stylesheets/style.css" />
@@ -145,61 +141,159 @@
 
     <script type="text/javascript" src="../src/scripts/navbar.js"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
   </head>
 
-  <body class="oflw" style="overflow: auto; ">
-  <!--Pop-up-->
+  <body class="oflw" style="overflow: auto">
+    <!--Pop-up-->
 
-  <div class="wrapper-popup">
-    <i class="fa-solid fa-x popup-close"></i>
-    <div id="login-container" class="container login-container">
-      <img
-        src="../assets/img/logo.png"
-        alt="Giro Disco Logo"
-        class="login-logo mt-1"
-      />
-      <div class="login-entrar mt-4 mb-4">
-        <h1 class="mb-1">Entrar</h1>
-        <p>Inicia sessão ou cria conta para começares a negociar</p>
-      </div>
-      <div class="form-floating mb-3 mx-auto login-form">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
+    <div class="wrapper-popup">
+      <i class="fa-solid fa-x popup-close"></i>
+      <div id="login-container" class="container login-container">
+        <img
+          src="../assets/img/logo.png"
+          alt="Giro Disco Logo"
+          class="login-logo mt-1"
         />
-        <label for="floatingInput">Email</label>
+        <div class="login-entrar mt-4 mb-4">
+          <h1 class="mb-1">Entrar</h1>
+          <p>Inicia sessão ou cria conta para começares a negociar</p>
+        </div>
+        <div class="form-floating mb-3 mx-auto login-form">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mx-auto login-form">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <button type="button" class="btn btn-link mt-2 login-naoSabes">
+          Não sabes a senha?
+        </button>
+        <button class="btn login-btn mt-3">Entrar</button>
+        <div class="login-divider w-75 mt-1">
+          <span>ou</span>
+        </div>
+        <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
       </div>
-      <div class="form-floating mx-auto login-form">
-        <input
-          type="password"
-          class="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-        />
-        <label for="floatingPassword">Senha</label>
+      <div
+        id="register-container"
+        class="container login-container custom-scroll"
+      >
+        <div class="custom-scroll">
+          <form class="was-validated">
+            <!-- Profile Picture -->
+            <img
+              src="../assets/img/miguel.jpeg"
+              alt="Miguel Ângelo"
+              class="profile-img"
+            />
+
+            <!-- First Name -->
+            <div class="mx-auto login-form mt-4">
+              <label for="name" class="form-label">Nome </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                value="Miguel"
+                required
+              />
+            </div>
+
+            <!-- Last Name -->
+            <div class="mx-auto login-form mt-3">
+              <label for="lastName" class="form-label">Apelido </label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+                value="Ângelo"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mx-auto login-form mt-3">
+              <label for="email" class="form-label">Email </label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                value="miguel.ang@ua.pt"
+                required
+              />
+            </div>
+
+            <!-- Password -->
+            <div class="mx-auto login-form mt-3">
+              <label for="password" class="form-label">Senha </label>
+              <input
+                type="text"
+                class="form-control"
+                id="password"
+                name="password"
+                value="Miguelito#2"
+                required
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mx-auto login-form mt-3">
+              <label for="phoneNumber" class="form-label">Contacto </label>
+              <input
+                type="text"
+                class="form-control"
+                id="phoneNumber"
+                name="phoneNumber"
+                value="912345678"
+                required
+              />
+            </div>
+
+            <!-- Address -->
+            <div class="mx-auto login-form mt-3">
+              <label for="address" class="form-label">Morada </label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                name="address"
+                value="Campus Universitário de Santiago"
+                required
+              />
+            </div>
+
+            <!-- Register Account -->
+            <button class="btn profile-edit-btn create-btn" onclick="store()">
+              Criar Conta
+            </button>
+          </form>
+        </div>
       </div>
-      <button type="button" class="btn btn-link mt-2 login-naoSabes">
-        Não sabes a senha?
-      </button>
-      <button class="btn login-btn mt-3">Entrar</button>
-      <div class="login-divider w-75 mt-1">
-        <span>ou</span>
-      </div>
-      <button class="btn signup-btn mt-1 mb-4">Criar Conta</button>
-    </div>
-    <div
-      id="register-container"
-      class="container login-container custom-scroll"
-    >
-      <div class="custom-scroll">
-        <form class="was-validated">
+      <div
+        id="register-containerComplete"
+        class="container login-container custom-scroll"
+        style="overflow-y: scroll; height: 100%"
+      >
+        <div class="custom-scroll">
           <!-- Profile Picture -->
           <img
             src="../assets/img/miguel.jpeg"
@@ -211,25 +305,15 @@
           <div class="mx-auto login-form mt-4">
             <label for="name" class="form-label">Nome </label>
             <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
               type="text"
               class="form-control"
               id="name"
-              name="name"
-              value="Miguel"
-              required
-            />
-          </div>
-
-          <!-- Last Name -->
-          <div class="mx-auto login-form mt-3">
-            <label for="lastName" class="form-label">Apelido </label>
-            <input
-              type="text"
-              class="form-control"
-              id="lastName"
-              name="lastName"
-              value="Ângelo"
-              required
+              value="Miguel Ângelo"
+              disabled
             />
           </div>
 
@@ -237,25 +321,15 @@
           <div class="mx-auto login-form mt-3">
             <label for="email" class="form-label">Email </label>
             <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
               type="text"
               class="form-control"
               id="email"
-              name="email"
               value="miguel.ang@ua.pt"
-              required
-            />
-          </div>
-
-          <!-- Password -->
-          <div class="mx-auto login-form mt-3">
-            <label for="password" class="form-label">Senha </label>
-            <input
-              type="text"
-              class="form-control"
-              id="password"
-              name="password"
-              value="Miguelito#2"
-              required
+              disabled
             />
           </div>
 
@@ -263,115 +337,36 @@
           <div class="mx-auto login-form mt-3">
             <label for="phoneNumber" class="form-label">Contacto </label>
             <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
               type="text"
               class="form-control"
               id="phoneNumber"
-              name="phoneNumber"
               value="912345678"
-              required
+              disabled
             />
           </div>
 
           <!-- Address -->
-          <div class="mx-auto login-form mt-3">
+          <div class="mx-auto login-form mt-3 mb-5">
             <label for="address" class="form-label">Morada </label>
             <input
+              style="
+                background-color: white !important;
+                color: var(--primary) !important;
+              "
               type="text"
               class="form-control"
               id="address"
-              name="address"
-              value="Campus Universitário de Santiago"
-              required
+              value="Campus Universitário de Santiago, Aveiro"
+              disabled
             />
           </div>
-
-          <!-- Register Account -->
-          <button class="btn profile-edit-btn create-btn" onclick="store()">
-            Criar Conta
-          </button>
-        </form>
-      </div>
-    </div>
-    <div
-      id="register-containerComplete"
-      class="container login-container custom-scroll"
-      style="overflow-y: scroll; height: 100%;"
-    >
-      <div class="custom-scroll">
-        <!-- Profile Picture -->
-        <img
-          src="../assets/img/miguel.jpeg"
-          alt="Miguel Ângelo"
-          class="profile-img"
-        />
-
-        <!-- First Name -->
-        <div class="mx-auto login-form mt-4">
-          <label for="name" class="form-label">Nome </label>
-          <input
-            style="
-              background-color: white !important;
-              color: var(--primary) !important;
-            "
-            type="text"
-            class="form-control"
-            id="name"
-            value="Miguel Ângelo"
-            disabled
-          />
-        </div>
-
-        <!-- Email -->
-        <div class="mx-auto login-form mt-3">
-          <label for="email" class="form-label">Email </label>
-          <input
-            style="
-              background-color: white !important;
-              color: var(--primary) !important;
-            "
-            type="text"
-            class="form-control"
-            id="email"
-            value="miguel.ang@ua.pt"
-            disabled
-          />
-        </div>
-
-        <!-- Phone Number -->
-        <div class="mx-auto login-form mt-3">
-          <label for="phoneNumber" class="form-label">Contacto </label>
-          <input
-            style="
-              background-color: white !important;
-              color: var(--primary) !important;
-            "
-            type="text"
-            class="form-control"
-            id="phoneNumber"
-            value="912345678"
-            disabled
-          />
-        </div>
-
-        <!-- Address -->
-        <div class="mx-auto login-form mt-3 mb-5">
-          <label for="address" class="form-label">Morada </label>
-          <input
-            style="
-              background-color: white !important;
-              color: var(--primary) !important;
-            "
-            type="text"
-            class="form-control"
-            id="address"
-            value="Campus Universitário de Santiago, Aveiro"
-            disabled
-          />
         </div>
       </div>
     </div>
-  </div>
-
 
     <!--Navbar-->
     <header>
@@ -393,27 +388,52 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <a href="#" class="shop"><i class="fa-solid fa-bag-shopping"></i></a>
-        <a href="#" class="user popup-open"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="#" class="user popup-open"
+          ><i class="fa-regular fa-circle-user"></i
+        ></a>
         <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
       </div>
     </header>
     <div class="rowabout">
       <div class="title">
         <h1>A</h1>
-        <br>
+        <br />
         <h1>NOSSA</h1>
-        <br>
-        <H1>MOTIVAÇÃO</H1>
+        <br />
+        <h1>MOTIVAÇÃO</h1>
       </div>
       <div class="motivation-text">
-        <li>Bem-vindo ao <strong>GiróDisco</strong>, o nosso Marketplace Online de Vinil!</li> 
-        <br>
-        <li>Este projeto pretende reunir colecionadores e amantes da música, <strong>como tu!</strong></li> 
-        <li>Queremos proporcionar uma experiência única de descoberta musical, conectando vendedores confiáveis </li>
-        <li> ​​com compradores apaixonados. </li>
-        <li><strong>Obrigado</strong> por fazeres parte desta comunidade, e não te esqueças...</li>
-        <br>
-        <li style="font-size: 24px; color:var(--primary); background-color: var(--secondary); border-radius: 5px; text-align: center; padding: 4px;"><strong>GiróDisco, mas não toques o mesmo.</strong></li>
+        <li>
+          Bem-vindo ao <strong>GiróDisco</strong>, o nosso Marketplace Online de
+          Vinil!
+        </li>
+        <br />
+        <li>
+          Este projeto pretende reunir colecionadores e amantes da música,
+          <strong>como tu!</strong>
+        </li>
+        <li>
+          Queremos proporcionar uma experiência única de descoberta musical,
+          conectando vendedores confiáveis
+        </li>
+        <li>com compradores apaixonados.</li>
+        <li>
+          <strong>Obrigado</strong> por fazeres parte desta comunidade, e não te
+          esqueças...
+        </li>
+        <br />
+        <li
+          style="
+            font-size: 24px;
+            color: var(--primary);
+            background-color: var(--secondary);
+            border-radius: 5px;
+            text-align: center;
+            padding: 4px;
+          "
+        >
+          <strong>GiróDisco, mas não toques o mesmo.</strong>
+        </li>
       </div>
     </div>
     <!---->
@@ -467,28 +487,30 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
+    <!-- <div class="line"></div> -->
     <!--Footer-->
     <section class="footer">
       <div class="social">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
       <ul class="footer-list">
-          <li><a class="footer-nav" href="#">Recomendações</a></li>
-          <li><a class="footer-nav" href="map.html">Mapa</a></li>
-          <li><a class="footer-nav" href="about.html">Acerca</a></li>
-          <li><a href="publish_product.html" class="btn1">Anunciar</a></li>
+        <li><a class="footer-nav" href="#">Recomendações</a></li>
+        <li><a class="footer-nav" href="map.html">Mapa</a></li>
+        <li><a class="footer-nav" href="about.html">Acerca</a></li>
+        <li><a href="publish_product.html" class="btn1">Anunciar</a></li>
       </ul>
-      <p class="copyright"><i class="fa-regular fa-copyright"></i> 2023 GiróDisco | All rights reserved</p>
-  </section>
+      <p class="copyright">
+        <i class="fa-regular fa-copyright"></i> 2023 GiróDisco | All rights
+        reserved
+      </p>
+    </section>
 
-
-  <script type="text/javascript" src="scripts/popup.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"
-  ></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
