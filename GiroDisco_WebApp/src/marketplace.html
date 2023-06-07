@@ -731,8 +731,10 @@
     
         if (isFavoritesVisible) {
           favoritesList.style.display = 'grid';
+          
         } else {
           favoritesList.style.display = 'none';
+          
         }
       });
     
@@ -751,6 +753,15 @@
     
             isAddedToFavorites = true; // Set flag to indicate product is added to favorites
           }
+          else {
+        
+           // Product is already added to favorites, so remove it
+           const productToRemove = favoritesList.querySelector('.product-box');
+           favoritesList.removeChild(productToRemove);
+      
+           isAddedToFavorites = false; // Set flag to indicate product is removed from favorites
+          }
+          
         });
       });
     </script>
