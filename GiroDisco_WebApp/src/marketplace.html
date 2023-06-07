@@ -14,104 +14,110 @@
     />
     <!---->
     <style>
-      .favs {
-        margin-top: 50px;
-      }
-
-      .favs h1 {
-        text-decoration: underline;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .product-fav {
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7) !important;
+      .top-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: relative;
-        z-index: 2;
       }
+
       #favorites-list {
-        display: grid;
+        position: relative;
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        z-index: 1!important;
+        order: 2;
+        background-color: white;
+        border: 10px solid var(--secondary);
+        border-radius: 10px;
+        display: none;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2.5%;
         justify-content: center;
+        overflow-y: auto;
+        overflow-x: none;
       }
 
       #favorites-list .product-box {
-        padding: 15px 20px;
-      }
+      padding: 15px 20px;
+      height: 5px;
+    }
 
-      #favorites-list ul li {
-        font-family: "Open Sans", sans-serif;
-      }
+    #favorites-list ul li {
+      font-family: "Open Sans", sans-serif;
+    }
 
-      #favorites-list .product-img {
-        width: 100%;
-        padding-bottom: 100%;
-        border-radius: 6px;
-        background-size: cover;
-        background-position: center center;
-      }
+    #favorites-list .product-img {
+      width: 100%;
+      padding-bottom: 100%;
+      border-radius: 6px;
+      background-size: cover;
+      background-position: center center;
+    }
 
-      #favorites-list .product-infoL {
-        margin-top: 10px;
-      }
+    #favorites-list .product-infoL {
+      margin-top: 10px;
+    }
 
-      #favorites-list .product-infoL li {
-        opacity: 0.5;
-        font-size: 15px;
-        font-weight: 600;
-      }
+    #favorites-list .product-infoL li {
+      opacity: 0.5;
+      font-size: 15px;
+      font-weight: 600;
+    }
 
-      #favorites-list .product-infoL .product-title {
-        padding: 3px 0;
-        padding-bottom: 4px;
-        font-size: 24px;
-        opacity: 1;
-      }
+    #favorites-list .product-infoL .product-title {
+      padding: 3px 0;
+      padding-bottom: 4px;
+      font-size: 24px;
+      opacity: 1;
+    }
 
-      #favorites-list .product-infoR {
-        margin-top: 16px;
-      }
+    #favorites-list .product-infoR {
+      margin-top: 16px;
+    }
 
-      #favorites-list .product-infoR .product-genre {
-        text-align: right;
-        margin-bottom: 6px;
-        opacity: 0.8;
-        font-size: 18px;
-      }
+    #favorites-list .product-infoR .product-genre {
+      text-align: right;
+      margin-bottom: 6px;
+      opacity: 0.8;
+      font-size: 18px;
+    }
 
-      #favorites-list .rating {
-        display: flex;
-        flex-direction: row;
-      }
+    #favorites-list .rating {
+      display: flex;
+      flex-direction: row;
+    }
 
-      #favorites-list .rating li {
-        font-size: 18px;
-      }
+    #favorites-list .rating li {
+      font-size: 18px;
+    }
 
-      #favorites-list .rating li i {
-        font-size: 18px;
-      }
+    #favorites-list .rating li i {
+      font-size: 18px;
+    }
 
-      #favorites-list .product-cart {
-        margin-top: 115px;
-        display: flex;
-        justify-content: space-between;
-      }
+    #favorites-list .product-cart {
+      margin-top: 115px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-      #favorites-list .product-cart li {
-        font-size: 22px;
-        opacity: 0.85;
-        font-weight: bold;
-      }
+    #favorites-list .product-cart li {
+      font-size: 22px;
+      opacity: 0.85;
+      font-weight: bold;
+    }
 
-      #favorites-list .product-cart li i {
-        font-size: 35px;
-        opacity: 1;
-        cursor: pointer;
-        position: relative;
-        bottom: 5px;
-      }
+    #favorites-list .product-cart li i {
+      font-size: 35px;
+      opacity: 1;
+      cursor: pointer;
+      position: relative;
+      bottom: 5px;
+    }
+
+      
     </style>
     <!--Icons-->
 
@@ -511,28 +517,37 @@
         <div class="panel-separator"></div>
       </div>
       <div class="right-panel">
-        <div class="drpdown drpdown-filter">
-          <div class="select">
-            <span class="selected">Melhor condição</span>
-            <div class="caret" style="margin-right: 20%;"><i class="fa-solid fa-angle-down"></i></div>
+            <a  id="toggle-favorites" onclick="toggleFavorites()" style="    width: 97px;
+            padding: 0.5em 0; position: absolute;
+            left: 0;
+            top: 0px; cursor: pointer">
+              Favoritos
+            </a>
+          <div class="drpdown drpdown-filter">
+            <div class="select">
+              <span class="selected" >Melhor condição</span>
+              <div class="caret" style="margin-right: 20%;"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <ul class="drpdown-menu">
+              <li class="active">Melhor condição</li>
+              <li>Preço ascendente</li>
+              <li>Preço descendente</li>
+              <li>Data de publicação</li>
+            </ul>
           </div>
-          <ul class="drpdown-menu">
-            <li class="active">Melhor condição</li>
-            <li>Preço ascendente</li>
-            <li>Preço descendente</li>
-            <li>Data de publicação</li>
-          </ul>
-        </div>
-        <div class="product-grid">
+       <div id="favorites-list">
+
+            </div>
+        <div class="product-grid" style="z-index: 0!important;">
 
 
-          <div class="product-box">
+          <div class="product-box" id="myDiv">
             <a class="product-redirect" href="./product_UnVerano.html"></a>
             <div
               class="product-img"
               style="background-image: url(../assets/img/Un_Verano.jpg)"
             >
-              <i class="fa-regular fa-heart product-fav"></i>
+            <i  class="fa-regular fa-heart product-fav" style="z-index: 1;"></i>
             </div>
             <ul class="product-infoL">
               <li class="product-title">Un Verano Sin Ti</li>
@@ -554,7 +569,7 @@
               <li><i class="fa-solid fa-plus product-add"></i></li>
             </ul>
           </div>
-          <div class="product-box">
+          <div class="product-box" data-id="2">
             <a class="product-redirect" href="./product_deaf.html"></a>
             <div
               class="product-img"
@@ -562,7 +577,7 @@
                 background-image: url(../assets/img/songs_for_the_deaf.png);
               "
             >
-              <i class="fa-regular fa-heart product-fav"></i>
+            <i class="fa-regular fa-heart product-fav" style="z-index: 1;"></i>
             </div>
             <ul class="product-infoL">
               <li class="product-title">Songs for the Deaf</li>
@@ -592,7 +607,7 @@
                 background-image: url(../assets/img/Johnny_Cash_At_Folsom_Prison.jpg) !important;
               "
             >
-              <i class="fa-regular fa-heart product-fav"></i>
+            <i id="fav-heart" class="fa-regular fa-heart product-fav" style="z-index: 1;"></i>
             </div>
             <ul class="product-infoL">
               <li class="product-title">At Folsom Prison</li>
@@ -611,7 +626,7 @@
             </ul>
             <ul class="product-cart">
               <li>24.99€</li>
-              <li><i class="fa-solid fa-plus product-add"></i></li>
+              <li><i class="fa-solid fa-plus product-add" style="z-index: 1;"></i></li>
             </ul>
           </div>
           <div class="product-box">
@@ -622,7 +637,7 @@
                 background-image: url(../assets/img/oncle_jazz.jpeg) !important;
               "
             >
-              <i class="fa-regular fa-heart product-fav"></i>
+              <i class="fa-regular fa-heart product-fav" style="z-index: 1;"></i>
             </div>
             <ul class="product-infoL">
               <li class="product-title">Oncle Jazz</li>
@@ -641,7 +656,7 @@
             </ul>
             <ul class="product-cart">
               <li>19.99€</li>
-              <li><i class="fa-solid fa-plus product-add"></i></li>
+              <li><i class="fa-solid fa-plus product-add" style="z-index: 1;"></i></li>
             </ul>
           </div>
           <div class="product-box">
@@ -652,7 +667,7 @@
                 background-image: url(../assets/img/theOOZ.webp) !important;
               "
             >
-              <i class="fa-regular fa-heart product-fav"></i>
+              <i class="fa-regular fa-heart product-fav" style="z-index: 1;"></i>
             </div>
             <ul class="product-infoL">
               <li class="product-title">The OOZ</li>
@@ -698,10 +713,48 @@
       </p>
     </section>
 
+    <script>
+
+    </script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/home.js"></script>
     <script type="text/javascript" src="scripts/popup.js"></script>
+    <script>
+      var toggleFavorites = document.getElementById('toggle-favorites');
+      var favoritesList = document.getElementById('favorites-list');
+      const productBoxes = document.querySelectorAll('.product-box');
+      let isFavoritesVisible = false; 
+    
+      toggleFavorites.addEventListener('click', function() {
+        isFavoritesVisible = !isFavoritesVisible; 
+    
+        if (isFavoritesVisible) {
+          favoritesList.style.display = 'grid';
+        } else {
+          favoritesList.style.display = 'none';
+        }
+      });
+    
+      productBoxes.forEach((productBox) => {
+        const heartIcon = productBox.querySelector('.product-fav');
+        let isAddedToFavorites = false; // Flag to track if product is already added
+    
+        heartIcon.addEventListener('click', () => {
+          if (!isAddedToFavorites) {
+            const clonedProductBox = productBox.cloneNode(true);
+    
+            const clonedHeartIcon = clonedProductBox.querySelector('.product-fav');
+            clonedHeartIcon.remove();
+    
+            favoritesList.appendChild(clonedProductBox);
+    
+            isAddedToFavorites = true; // Set flag to indicate product is added to favorites
+          }
+        });
+      });
+    </script>
 
+  
     <script>
       const json = localStorage.getItem("publishProduct");
       const obj = JSON.parse(json);

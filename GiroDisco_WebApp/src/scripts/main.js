@@ -51,6 +51,7 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+
 //Product Box
 const favs = document.querySelectorAll('.product-fav');
 favs.forEach(fav => {

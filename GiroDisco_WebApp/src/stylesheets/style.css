@@ -380,6 +380,7 @@ a.btn1:hover {
 .drpdown-filter {
   position: absolute;
   right: 0;
+  top: 0px;
 }
 /**/
 
