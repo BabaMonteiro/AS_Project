@@ -277,7 +277,7 @@
       <div
         id="register-containerComplete"
         class="container login-container custom-scroll"
-        style="overflow-y: scroll; height: 95%;"
+        style="overflow-y: scroll; height: 95%"
       >
         <div class="custom-scroll">
           <!-- Profile Picture -->
@@ -659,6 +659,7 @@
               <li><i class="fa-solid fa-plus product-add" style="z-index: 1;"></i></li>
             </ul>
           </div>
+
           <div class="product-box">
             <a class="product-redirect" href="./product_TheOOZ.html"></a>
             <div
@@ -761,6 +762,7 @@
 
       const album = `
         <div class="product-box">
+          <a class="product-redirect" href="./preview.html"></a>
           <div
             class="product-img"
             style="
@@ -770,9 +772,7 @@
             <i class="fa-regular fa-heart product-fav"></i>
           </div>
           <ul class="product-infoL">
-            <a href="./preview.html">
-              <li class="product-title">${obj["vinilTitle"]}</li>
-            </a>
+            <li class="product-title">${obj["vinilTitle"]}</li>
             <li>${obj["artistName"]}</li>
             <li>${obj["year"]}</li>
           </ul>
