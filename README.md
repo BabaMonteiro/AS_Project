@@ -4,6 +4,7 @@
 Projeto realizado no 2º semestre do 2º ano de LECI, no âmbito da UC de Análise de Sistemas.
 
 Pode ser consultado em: **http://girodisco.vercel.app/**
+Repositório: **https://github.com/lecl16/AS_Project**
 
 ## Equipa
 
