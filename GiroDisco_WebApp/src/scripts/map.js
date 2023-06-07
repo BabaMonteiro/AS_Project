@@ -7,7 +7,9 @@ var geojson = {
   features: [
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        name: "Xrecords"
+      },
       geometry: {
         coordinates: [-8.65230552671622, 40.63815571249049],
         type: "Point",
@@ -15,12 +17,27 @@ var geojson = {
     },
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        name: "MegaHits"
+      },
       geometry: {
         coordinates: [-8.654572328836025, 40.64210328193036],
         type: "Point",
       },
     },
+    {
+      type: "Feature",
+      properties: {
+        name: "Adágio Aveiro"
+      },
+      geometry: {
+        coordinates: [
+          -8.644115006862137,
+          40.64329681312205
+        ],
+        type: "Point"
+      }
+    }
   ],
 };
 
