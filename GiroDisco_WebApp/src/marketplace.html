@@ -271,7 +271,7 @@
       <div
         id="register-containerComplete"
         class="container login-container custom-scroll"
-        style="overflow-y: scroll; height: 95%;"
+        style="overflow-y: scroll; height: 95%"
       >
         <div class="custom-scroll">
           <!-- Profile Picture -->
@@ -514,7 +514,9 @@
         <div class="drpdown drpdown-filter">
           <div class="select">
             <span class="selected">Melhor condição</span>
-            <div class="caret" style="margin-right: 20%;"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="caret" style="margin-right: 20%">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
           <ul class="drpdown-menu">
             <li class="active">Melhor condição</li>
@@ -524,8 +526,6 @@
           </ul>
         </div>
         <div class="product-grid">
-
-
           <div class="product-box">
             <a class="product-redirect" href="./product_UnVerano.html"></a>
             <div
@@ -644,6 +644,7 @@
               <li><i class="fa-solid fa-plus product-add"></i></li>
             </ul>
           </div>
+
           <div class="product-box">
             <a class="product-redirect" href="./product_TheOOZ.html"></a>
             <div
@@ -708,6 +709,7 @@
 
       const album = `
         <div class="product-box">
+          <a class="product-redirect" href="./preview.html"></a>
           <div
             class="product-img"
             style="
@@ -717,9 +719,7 @@
             <i class="fa-regular fa-heart product-fav"></i>
           </div>
           <ul class="product-infoL">
-            <a href="./preview.html">
-              <li class="product-title">${obj["vinilTitle"]}</li>
-            </a>
+            <li class="product-title">${obj["vinilTitle"]}</li>
             <li>${obj["artistName"]}</li>
             <li>${obj["year"]}</li>
           </ul>
